@@ -20,25 +20,41 @@ import {
 import fetch from "node-fetch";
 import { Presence } from "./presence";
 
+/** Client options to initialize. */
 export interface RPClientOptions {
   secret?: string;
   scopes?: string[];
 }
 
+/** High-level wrapper over Discord IPC. */
 export class RPClient extends EventEmitter {
+  /** Client ID */
   id: string;
+  /** Discord RPC Version */
   v: number = 1;
+  /** Internal IPC */
   ipc: DiscordIPC;
+  /** Whether Client is Authorized yet or not */
   authorized: boolean = false;
+  /** Whether Client is Authenticated yet or not */
   authenticated: boolean = false;
+  /** Auth Code saved from `authorize` */
   authCode?: string;
+  /** Access Token saved from `authenticate` */
   accessToken?: string;
+  /** Scopes to use for Authorization */
   scopes?: string[];
+  /** Client Secret (for fetching Access Token from Auth Code) */
   secret?: string;
+  /** Underlying User account of the Discord Client */
   user?: User;
+  /** RPC Client Config (Discord) */
   config?: ClientConfig;
+  /** User's cached Voice Settings */
   userVoiceSettings?: UserVoiceSettings;
+  /** Expiration of Access Token */
   expires?: number;
+  /** Application object of the Client */
   application?: Application;
 
   constructor(id: string, options?: RPClientOptions) {
@@ -191,6 +207,7 @@ export class RPClient extends EventEmitter {
     }
   }
 
+  /** Subscribe for an RPC Event. */
   async subscribe(evt: RPCEvent, args?: any) {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -205,6 +222,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Unsubscribe from an RPC Event. */
   async unsubscribe(evt: RPCEvent, args?: any) {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -219,6 +237,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Connect to Discord IPC. */
   async connect() {
     await this.ipc.connect();
     this.ipc.send(
@@ -230,11 +249,15 @@ export class RPClient extends EventEmitter {
     return this.waitFor("ready").then(() => this);
   }
 
+  /** Authorize for given scopes (or scopes in Client Options). */
   async authorize(scopes?: string[]) {
-    if (this.authorized) throw new Error("Already authorized");
+    if (this.authorized || this.authenticated)
+      throw new Error("Already authorized");
 
     if (scopes) this.scopes = scopes;
     if (!this.scopes) this.scopes = ["rpc"];
+
+    if (!this.scopes.includes("rpc")) this.scopes.push("rpc");
 
     this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -250,6 +273,7 @@ export class RPClient extends EventEmitter {
     return this.waitFor("authenticate").then(() => this);
   }
 
+  /** Authenticate using an existing Access Token */
   async authenticate(token?: string) {
     if (this.authenticated) throw new Error("Already Authenticated");
 
@@ -268,7 +292,8 @@ export class RPClient extends EventEmitter {
     return this.waitFor("authenticate").then(() => this);
   }
 
-  async fetchAccessToken(code?: string) {
+  /** Fetches Access Token from given Auth Code */
+  private async fetchAccessToken(code?: string) {
     if (code) this.authCode = code;
     if (this.accessToken) throw new Error("Access Token already fetched");
     if (!this.authCode) throw new Error("No Auth Code given");
@@ -293,6 +318,7 @@ export class RPClient extends EventEmitter {
     return this.accessToken;
   }
 
+  /** Set User's Activity (Presence) */
   async setActivity(activity: Presence): Promise<Presence> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -309,6 +335,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Get a Guild by ID */
   async getGuild(id: string, timeout: number = 5000): Promise<Guild> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -325,6 +352,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Get all Guilds of the User */
   async getGuilds(timeout: number = 5000): Promise<PartialGuild[]> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -338,6 +366,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Get a Channel by ID */
   async getChannel(
     id: string,
     timeout: number = 5000
@@ -356,6 +385,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Get all Channels of the User */
   async getChannels(timeout: number = 5000): Promise<PartialChannel[]> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -369,6 +399,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Set User's Voice Settings (only one property at a time or Discord will error) */
   async setUserVoiceSettings(
     settings: UserVoiceSettings,
     timeout = 5000
@@ -387,6 +418,7 @@ export class RPClient extends EventEmitter {
     ).then((data) => data[0]);
   }
 
+  /** Select a Voice Channel by ID */
   async selectVoiceChannel(
     id: string,
     force?: boolean,
@@ -410,6 +442,7 @@ export class RPClient extends EventEmitter {
     ).then((chan) => chan[0]);
   }
 
+  /** Select a Text Channel by ID */
   async selectTextChannel(id: string, timeout = 5000): Promise<ChannelPayload> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -428,6 +461,7 @@ export class RPClient extends EventEmitter {
     ).then((chan) => chan[0]);
   }
 
+  /** Get selected Voice Channel */
   async getSelectedVoiceChannel(timeout = 5000): Promise<ChannelPayload> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -443,6 +477,7 @@ export class RPClient extends EventEmitter {
     ).then((data) => data[0]);
   }
 
+  /** Get Voice Settins of Client */
   async getVoiceSettings(timeout = 5000): Promise<VoiceSettings> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -458,6 +493,7 @@ export class RPClient extends EventEmitter {
     ).then((data) => data[0]);
   }
 
+  /** Set Voice Settings of Client. Only one property to update at once supported */
   async setVoiceSettings(
     settings: VoiceSettings,
     timeout = 5000
@@ -476,6 +512,7 @@ export class RPClient extends EventEmitter {
     ).then((data) => data[0]);
   }
 
+  /** START or STOP capturing shortcut */
   async captureShortcut(
     action: "START" | "STOP",
     timeout = 5000
@@ -496,14 +533,17 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Start capturing shortcut */
   async startCaptureShortcut(timeout = 5000): Promise<ShortcutKeyCombo[]> {
     return this.captureShortcut("START");
   }
 
+  /** Stop capturing shortcut */
   async stopCaptureShortcut(timeout = 5000): Promise<ShortcutKeyCombo[]> {
     return this.captureShortcut("STOP");
   }
 
+  /** Set Certified Devices (Audio/Video) */
   async setCertifiedDevices(
     devices: Device[],
     timeout = 5000
@@ -524,6 +564,7 @@ export class RPClient extends EventEmitter {
     ).then(() => this);
   }
 
+  /** Approve an Activity Join Request (by user ID) */
   sendActivityJoinInvite(id: string) {
     this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -535,6 +576,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Close (decline) an Activity Join Request */
   closeActivityRequest(id: string) {
     this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -546,6 +588,7 @@ export class RPClient extends EventEmitter {
     );
   }
 
+  /** Wait for an event to fire */
   async waitFor(
     event: string,
     checkFunction: (...args: any[]) => boolean = () => true,
