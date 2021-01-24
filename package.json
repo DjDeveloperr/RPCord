@@ -1,12 +1,13 @@
 {
-  "name": "drpc",
+  "name": "rpcord",
   "version": "1.0.0",
   "description": "Module to interact with Discord IPC.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "tsc && node dist/example.js"
+    "test": "tsc && node test.js",
+    "build": "tsc"
   },
-  "author": "DjDeveloper",
+  "author": "DjDeveloperr",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^14.14.22",
