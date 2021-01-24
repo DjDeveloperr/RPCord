@@ -18,9 +18,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Use Checkout Action
         uses: actions/checkout@v2
-        with:
-          path: docs
-          branch: gh-pages
       - run: npm i
       - run: npm i typescript
       - run: npm i vuepress
@@ -29,4 +26,12 @@ jobs:
       - run: npm i vuepress-jsdoc -g
       - run: yarn add -D typescript jsdoc-babel @babel/cli @babel/core @babel/preset-env @babel/preset-typescript jsdoc-to-markdown
       - run: npx vuepress-jsdoc --source ./dist --dist ./docs --folder code --title RPCord --exclude *.test.js,exclude.js
-      - run: npx vuepress build docs
+      - name: Deploy documentation
+        if: success()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/src/.vuepress/dist
+          commit_message: ${{ github.event.head_commit.message }}
+          keep_files: true
+          enable_jekyll: false
