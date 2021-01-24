@@ -19,8 +19,8 @@ jobs:
       - name: Use Checkout Action
         uses: actions/checkout@v2
         with:
-          - path: docs
-          - ref: gh-pages
+          path: docs
+          ref: gh-pages
       - run: npm i
       - run: npm i typescript
       - run: npm i vuepress
