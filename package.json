@@ -4,7 +4,7 @@
   "description": "Module to interact with Discord IPC.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "tsc && node test.js",
+    "test": "node dist/index.js",
     "build": "tsc"
   },
   "author": "DjDeveloperr",
