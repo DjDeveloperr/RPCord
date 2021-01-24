@@ -342,7 +342,7 @@ export class RPClient extends EventEmitter {
         cmd: Command.GetGuild,
         args: {
           guild_id: id,
-          timeout,
+          timeout: Math.floor(timeout / (1000 * 60)),
         },
       })
     );
@@ -386,11 +386,16 @@ export class RPClient extends EventEmitter {
   }
 
   /** Get all Channels of the User */
-  async getChannels(timeout: number = 5000): Promise<PartialChannel[]> {
+  async getChannels(
+    guild?: string,
+    timeout: number = 5000
+  ): Promise<PartialChannel[]> {
     const nonce = this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.GetChannels,
-        args: {},
+        args: {
+          guild_id: guild,
+        },
       })
     );
 
@@ -430,7 +435,7 @@ export class RPClient extends EventEmitter {
         args: {
           channel_id: id,
           force,
-          timeout,
+          timeout: Math.floor(timeout / (1000 * 60)),
         },
       })
     );
@@ -449,7 +454,7 @@ export class RPClient extends EventEmitter {
         cmd: Command.SelectTextChannel,
         args: {
           channel_id: id,
-          timeout,
+          timeout: Math.floor(timeout / (1000 * 60)),
         },
       })
     );
