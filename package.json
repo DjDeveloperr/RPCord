@@ -4,9 +4,7 @@
   "description": "Module to interact with Discord IPC.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": {
-    "url": "https://github.com/DjDeveloperr/RPCord"
-  },
+  "repository": "git://github.com/DjDeveloperr/RPCord.git",
   "scripts": {
     "test": "node dist/index.js",
     "build": "tsc"
