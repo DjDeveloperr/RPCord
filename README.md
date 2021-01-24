@@ -1,4 +1,4 @@
-# DRPC
+# RPCord
 
 Module to interact with local Discord Client using IPC.
 
