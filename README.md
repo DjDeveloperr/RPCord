@@ -29,6 +29,10 @@ rpc.connect().then(() => {
 });
 ```
 
+## Contributing
+
+You're always welcome to contribute!
+
 ## License
 
 Check [LICENSE](LICENSE) for more info.

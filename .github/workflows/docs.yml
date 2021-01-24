@@ -1,0 +1,25 @@
+name: Docs Gen
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i
+      - run: npm i typescript
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npm i vuepress-jsdoc -g
+      - run: yarn add -D typescript jsdoc-babel @babel/cli @babel/core @babel/preset-env @babel/preset-typescript jsdoc-to-markdown
+      - run: npx vuepress-jsdoc --source ./dist --dist ./docs --folder code --title RPCord --exclude *.test.js,exclude.js
