@@ -16,10 +16,17 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Use Checkout Action
+        uses: actions/checkout@v2
+        with:
+          - path: docs
+          - ref: gh-pages
       - run: npm i
       - run: npm i typescript
+      - run: npm i vuepress
       - run: npm ci
       - run: npm run build --if-present
       - run: npm i vuepress-jsdoc -g
       - run: yarn add -D typescript jsdoc-babel @babel/cli @babel/core @babel/preset-env @babel/preset-typescript jsdoc-to-markdown
       - run: npx vuepress-jsdoc --source ./dist --dist ./docs --folder code --title RPCord --exclude *.test.js,exclude.js
+      - run: npx vuepress build docs
