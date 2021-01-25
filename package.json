@@ -1,6 +1,6 @@
 {
   "name": "rpcord",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Module to interact with Discord IPC.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -3,12 +3,10 @@ export function getIPCPath(id: number) {
 
   let XDG_RUNTIME_DIR, TMPDIR, TMP, TEMP;
 
-  try {
-    XDG_RUNTIME_DIR = process.env["XDG_RUNTIME_DIR"];
-    TMPDIR = process.env["XDG_RUNTIME_DIR"];
-    TMP = process.env["TMP"];
-    TEMP = process.env["TEMP"];
-  } catch (e) {}
+  XDG_RUNTIME_DIR = process.env["XDG_RUNTIME_DIR"];
+  TMPDIR = process.env["TMPDIR"];
+  TMP = process.env["TMP"];
+  TEMP = process.env["TEMP"];
 
   const prefix = XDG_RUNTIME_DIR || TMPDIR || TMP || TEMP || "/tmp";
   return `${prefix.replace(/\/$/, "")}/discord-ipc-${id}`;
