@@ -19,6 +19,8 @@ import {
 } from "./types";
 import fetch from "node-fetch";
 import { Presence } from "./presence";
+import { v4 } from "uuid";
+import { time } from "console";
 
 /** Client options to initialize. */
 export interface RPClientOptions {
@@ -56,6 +58,8 @@ export class RPClient extends EventEmitter {
   expires?: number;
   /** Application object of the Client */
   application?: Application;
+  /** Whether Client is connected or not */
+  connected: boolean = false;
 
   constructor(id: string, options?: RPClientOptions) {
     super();
@@ -66,6 +70,8 @@ export class RPClient extends EventEmitter {
     }
 
     this.ipc = new DiscordIPC();
+    this.ipc.on("connect", () => (this.connected = true));
+    this.ipc.on("close", () => (this.connected = false));
     this.ipc.on("packet", (packet: Packet) => this.processPacket(packet));
   }
 
@@ -209,44 +215,58 @@ export class RPClient extends EventEmitter {
 
   /** Subscribe for an RPC Event. */
   async subscribe(evt: RPCEvent, args?: any) {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor("subscribe", (_, n) => n == nonce, 10000).then(
+      () => this
+    );
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.Subscribe,
         args: args ?? {},
         evt,
+        nonce,
       })
     );
 
-    return this.waitFor("subscribe", (_, n) => n == nonce, 10000).then(
-      () => this
-    );
+    return wait;
   }
 
   /** Unsubscribe from an RPC Event. */
   async unsubscribe(evt: RPCEvent, args?: any) {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor("unsubscribe", (_, n) => n == nonce, 10000).then(
+      () => this
+    );
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.Unsubscribe,
         args: args ?? {},
         evt,
+        nonce,
       })
     );
 
-    return this.waitFor("unsubscribe", (_, n) => n == nonce, 10000).then(
-      () => this
-    );
+    return wait;
   }
 
   /** Connect to Discord IPC. */
   async connect() {
     await this.ipc.connect();
+
+    const wait = this.waitFor("ready").then(() => this);
+
     this.ipc.send(
       new Packet(OpCode.Handshake, {
         v: 1,
         client_id: this.id,
       })
     );
-    return this.waitFor("ready").then(() => this);
+
+    return wait;
   }
 
   /** Authorize for given scopes (or scopes in Client Options). */
@@ -259,6 +279,8 @@ export class RPClient extends EventEmitter {
 
     if (!this.scopes.includes("rpc")) this.scopes.push("rpc");
 
+    const wait = this.waitFor("authenticate").then(() => this);
+
     this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.Authorize,
@@ -270,7 +292,7 @@ export class RPClient extends EventEmitter {
       })
     );
 
-    return this.waitFor("authenticate").then(() => this);
+    return wait;
   }
 
   /** Authenticate using an existing Access Token */
@@ -279,6 +301,8 @@ export class RPClient extends EventEmitter {
 
     if (token) this.accessToken = token;
     if (!this.accessToken) throw new Error("Access Token is required");
+
+    const wait = this.waitFor("authenticate").then(() => this);
 
     this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -289,7 +313,7 @@ export class RPClient extends EventEmitter {
       })
     );
 
-    return this.waitFor("authenticate").then(() => this);
+    return wait;
   }
 
   /** Fetches Access Token from given Auth Code */
@@ -320,50 +344,65 @@ export class RPClient extends EventEmitter {
 
   /** Set User's Activity (Presence) */
   async setActivity(activity: Presence): Promise<Presence> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor("setActivity", (_, n) => n == nonce, 10000).then(
+      (act) => new Presence(act[0])
+    );
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.SetActivity,
         args: {
           pid: process.pid,
           activity,
         },
+        nonce,
       })
     );
 
-    return this.waitFor("setActivity", (_, n) => n == nonce, 10000).then(
-      (act) => new Presence(act[0])
-    );
+    return wait;
   }
 
   /** Get a Guild by ID */
   async getGuild(id: string, timeout: number = 5000): Promise<Guild> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor("getGuild", (_, n) => n === nonce, timeout).then(
+      (guild) => guild[0]
+    );
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.GetGuild,
         args: {
           guild_id: id,
           timeout: Math.floor(timeout / (1000 * 60)),
         },
+        nonce,
       })
     );
 
-    return this.waitFor("getGuild", (_, n) => n === nonce, timeout).then(
-      (guild) => guild[0]
-    );
+    return wait;
   }
 
   /** Get all Guilds of the User */
   async getGuilds(timeout: number = 5000): Promise<PartialGuild[]> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor("getGuilds", (_, n) => n === nonce, timeout).then(
+      (guilds) => guilds[0]
+    );
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.GetGuilds,
         args: {},
+        nonce,
       })
     );
 
-    return this.waitFor("getGuilds", (_, n) => n === nonce, timeout).then(
-      (guilds) => guilds[0]
-    );
+    return wait;
   }
 
   /** Get a Channel by ID */
@@ -371,18 +410,25 @@ export class RPClient extends EventEmitter {
     id: string,
     timeout: number = 5000
   ): Promise<ChannelPayload> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "getChannel",
+      (_, n) => n === nonce,
+      timeout
+    ).then((guild) => guild[0]);
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.GetChannel,
         args: {
           channel_id: id,
         },
+        nonce,
       })
     );
 
-    return this.waitFor("getChannel", (_, n) => n === nonce, timeout).then(
-      (guild) => guild[0]
-    );
+    return wait;
   }
 
   /** Get all Channels of the User */
@@ -390,18 +436,25 @@ export class RPClient extends EventEmitter {
     guild?: string,
     timeout: number = 5000
   ): Promise<PartialChannel[]> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "getChannels",
+      (_, n) => n === nonce,
+      timeout
+    ).then((channels) => channels[0]);
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.GetChannels,
         args: {
           guild_id: guild,
         },
+        nonce,
       })
     );
 
-    return this.waitFor("getChannels", (_, n) => n === nonce, timeout).then(
-      (channels) => channels[0]
-    );
+    return wait;
   }
 
   /** Set User's Voice Settings (only one property at a time or Discord will error) */
@@ -409,18 +462,23 @@ export class RPClient extends EventEmitter {
     settings: UserVoiceSettings,
     timeout = 5000
   ): Promise<UserVoiceSettings> {
-    const nonce = this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.SetUserVoiceSettings,
-        args: settings,
-      })
-    );
+    const nonce = v4();
 
-    return this.waitFor(
+    const wait = this.waitFor(
       "setUserVoiceSettings",
       (_, n) => n === nonce,
       timeout
     ).then((data) => data[0]);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.SetUserVoiceSettings,
+        args: settings,
+        nonce,
+      })
+    );
+
+    return wait;
   }
 
   /** Select a Voice Channel by ID */
@@ -429,7 +487,15 @@ export class RPClient extends EventEmitter {
     force?: boolean,
     timeout = 5000
   ): Promise<ChannelPayload> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "selectVoiceChannel",
+      (_, n) => n === nonce,
+      timeout
+    ).then((chan) => chan[0]);
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.SelectVoiceChannel,
         args: {
@@ -437,65 +503,77 @@ export class RPClient extends EventEmitter {
           force,
           timeout: Math.floor(timeout / (1000 * 60)),
         },
+        nonce,
       })
     );
 
-    return this.waitFor(
-      "selectVoiceChannel",
-      (_, n) => n === nonce,
-      timeout
-    ).then((chan) => chan[0]);
+    return wait;
   }
 
   /** Select a Text Channel by ID */
   async selectTextChannel(id: string, timeout = 5000): Promise<ChannelPayload> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "selectTextChannel",
+      (_, n) => n === nonce,
+      timeout
+    ).then((chan) => chan[0]);
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.SelectTextChannel,
         args: {
           channel_id: id,
           timeout: Math.floor(timeout / (1000 * 60)),
         },
+        nonce,
       })
     );
 
-    return this.waitFor(
-      "selectTextChannel",
-      (_, n) => n === nonce,
-      timeout
-    ).then((chan) => chan[0]);
+    return wait;
   }
 
   /** Get selected Voice Channel */
   async getSelectedVoiceChannel(timeout = 5000): Promise<ChannelPayload> {
-    const nonce = this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.GetSelectedVoiceChannel,
-        args: {},
-      })
-    );
+    const nonce = v4();
 
-    return this.waitFor(
+    const wait = this.waitFor(
       "getSelectedVoiceChannel",
       (_, n) => n === nonce,
       timeout
     ).then((data) => data[0]);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.GetSelectedVoiceChannel,
+        args: {},
+        nonce,
+      })
+    );
+
+    return wait;
   }
 
   /** Get Voice Settins of Client */
   async getVoiceSettings(timeout = 5000): Promise<VoiceSettings> {
-    const nonce = this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.GetVoiceSettings,
-        args: {},
-      })
-    );
+    const nonce = v4();
 
-    return this.waitFor(
+    const wait = this.waitFor(
       "getVoiceSettings",
       (_, n) => n === nonce,
       timeout
     ).then((data) => data[0]);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.GetVoiceSettings,
+        args: {},
+        nonce,
+      })
+    );
+
+    return wait;
   }
 
   /** Set Voice Settings of Client. Only one property to update at once supported */
@@ -503,18 +581,23 @@ export class RPClient extends EventEmitter {
     settings: VoiceSettings,
     timeout = 5000
   ): Promise<VoiceSettings> {
-    const nonce = this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.SetVoiceSettings,
-        args: settings,
-      })
-    );
+    const nonce = v4();
 
-    return this.waitFor(
+    const wait = this.waitFor(
       "setVoiceSettings",
       (_, n) => n === nonce,
       timeout
     ).then((data) => data[0]);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.SetVoiceSettings,
+        args: settings,
+        nonce,
+      })
+    );
+
+    return wait;
   }
 
   /** START or STOP capturing shortcut */
@@ -524,28 +607,35 @@ export class RPClient extends EventEmitter {
   ): Promise<ShortcutKeyCombo[]> {
     if (action != "START" && action != "STOP")
       throw new Error("Invalid Action. Must be either START or STOP");
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "captureShortcut",
+      (_, n) => n === nonce,
+      timeout
+    ).then((data) => data[0]);
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.CaptureShortcut,
         args: {
           action,
         },
+        nonce,
       })
     );
 
-    return this.waitFor("captureShortcut", (_, n) => n === nonce, timeout).then(
-      (data) => data[0]
-    );
+    return wait;
   }
 
   /** Start capturing shortcut */
   async startCaptureShortcut(timeout = 5000): Promise<ShortcutKeyCombo[]> {
-    return this.captureShortcut("START");
+    return this.captureShortcut("START", timeout);
   }
 
   /** Stop capturing shortcut */
   async stopCaptureShortcut(timeout = 5000): Promise<ShortcutKeyCombo[]> {
-    return this.captureShortcut("STOP");
+    return this.captureShortcut("STOP", timeout);
   }
 
   /** Set Certified Devices (Audio/Video) */
@@ -553,20 +643,25 @@ export class RPClient extends EventEmitter {
     devices: Device[],
     timeout = 5000
   ): Promise<RPClient> {
-    const nonce = this.ipc.send(
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "setCertifiedDevices",
+      (_, n) => n === nonce,
+      timeout
+    ).then(() => this);
+
+    this.ipc.send(
       new Packet(OpCode.Frame, {
         cmd: Command.SetCertifiedDevices,
         args: {
           devices,
         },
+        nonce,
       })
     );
 
-    return this.waitFor(
-      "setCertifiedDevices",
-      (_, n) => n === nonce,
-      timeout
-    ).then(() => this);
+    return wait;
   }
 
   /** Approve an Activity Join Request (by user ID) */
@@ -616,5 +711,11 @@ export class RPClient extends EventEmitter {
       };
       this.on(event, eventFunc);
     });
+  }
+
+  /** Disconnect from Discord IPC */
+  disconnect(): void {
+    this.ipc.close();
+    this.connected = false;
   }
 }

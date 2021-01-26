@@ -35,10 +35,12 @@ export class DiscordIPC extends EventEmitter {
         this.emit("packet", packet);
       }
     });
+
+    this.socket.on("close", () => this.emit("close"));
   }
 
   send(packet: Packet): string {
-    packet.data.nonce = v4();
+    if (!packet.data.nonce) packet.data.nonce = v4();
     this.socket?.write(packet.encode());
     return packet.data.nonce;
   }
