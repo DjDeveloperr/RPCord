@@ -8,6 +8,8 @@ import {
   Command,
   Device,
   Guild,
+  Lobby,
+  LobbyOptions,
   OpCode,
   PartialChannel,
   PartialGuild,
@@ -172,6 +174,18 @@ export class RPClient extends EventEmitter {
             case Command.SetCertifiedDevices:
               this.emit("setCertifiedDevices", nonce);
               break;
+
+            case Command.CreateLobby:
+              this.emit("createLobby", data, nonce);
+
+            case Command.UpdateLobby:
+              this.emit("updateLobby", nonce);
+
+            case Command.DeleteLobby:
+              this.emit("deleteLobby", data, nonce);
+
+            case Command.SearchLobbies:
+              this.emit("searchLobbies", data, nonce);
 
             default:
               break;
@@ -686,6 +700,94 @@ export class RPClient extends EventEmitter {
         },
       })
     );
+  }
+
+  /** Create a new Lobby with given options */
+  async createLobby(options?: LobbyOptions, timeout = 5000): Promise<Lobby> {
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "createLobby",
+      (_, n) => n == nonce,
+      timeout
+    ).then((d) => d[0]);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.CreateLobby,
+        args: options ?? {},
+        nonce,
+      })
+    );
+
+    return wait;
+  }
+
+  /** BROKEN: Search for lobbies */
+  async searchLobbies(timeout = 5000): Promise<Lobby[]> {
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "searchLobbies",
+      (_, n) => n == nonce,
+      timeout
+    ).then((d) => d[0]);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.SearchLobbies,
+        args: {},
+        nonce,
+      })
+    );
+
+    return wait;
+  }
+
+  /** Update a Lobby with given options */
+  async updateLobby(
+    id: string,
+    options: LobbyOptions,
+    timeout = 5000
+  ): Promise<RPClient> {
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "updateLobby",
+      (_, n) => n == nonce,
+      timeout
+    ).then(() => this);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.UpdateLobby,
+        args: Object.assign({ id }, options || {}),
+        nonce,
+      })
+    );
+
+    return wait;
+  }
+
+  /** Delete a Lobby */
+  async deleteLobby(id: string, timeout = 5000): Promise<RPClient> {
+    const nonce = v4();
+
+    const wait = this.waitFor(
+      "deleteLobby",
+      (_, n) => n == nonce,
+      timeout
+    ).then(() => this);
+
+    this.ipc.send(
+      new Packet(OpCode.Frame, {
+        cmd: Command.DeleteLobby,
+        args: { id },
+        nonce,
+      })
+    );
+
+    return wait;
   }
 
   /** Wait for an event to fire */

@@ -29,6 +29,51 @@ export enum Command {
   SetActivity = "SET_ACTIVITY",
   SendActivityJoinInvite = "SEND_ACTIVITY_JOIN_INVITE",
   CloseActivityRequest = "CLOSE_ACTIVITY_REQUEST",
+  SetUserAchievement = "SET_USER_ACHIEVEMENT",
+  GetUserAchievements = "GET_USER_ACHIEVEMENTS",
+  GetActivityJoinTicket = "GET_ACTIVITY_JOIN_TICKET",
+  SendGenericEvent = "SEND_GENERIC_EVENT",
+  NetworkingSystemMetrics = "NETWORKING_SYSTEM_METRICS",
+  NetworkingPeerMetrics = "NETWORKING_PEER_METRICS",
+  NetworkingCreateToken = "NETWORKING_CREATE_TOKEN",
+  GetSkus = "GET_SKUS",
+  GetEntitlements = "GET_ENTITLEMENTS",
+  GetNetworkingConfig = "GET_NETWORKING_CONFIG",
+  StartPurchase = "START_PURCHASE",
+  GetEntitlementTicket = "GET_ENTITLEMENT_TICKET",
+  GetApplicationTicket = "GET_APPLICATION_TICKET",
+  ValidateApplication = "VALIDATE_APPLICATION",
+  OpenOverlayVoiceSettings = "OPEN_OVERLAY_VOICE_SETTINGS",
+  OpenOverlayGuildInvite = "OPEN_OVERLAY_GUILD_INVITE",
+  OpenOverlayActivityInvite = "OVEN_OVERLAY_ACTIVITY_INVITE",
+  SetOverlayLocked = "SET_OVERLAY_LOCKED",
+  DisconnectFromLobbyVoice = "DISCONNECT_FROM_LOBBY_VOICE",
+  ConnectToLobbyVoice = "CONNECT_TO_LOBBY_VOICE",
+  SearchLobbies = "SEARCH_LOBBIES",
+  SendToLobby = "SEND_TO_LOBBY",
+  DisconnectFromLobby = "DISCONNECT_FROM_LOBBY",
+  ConnectToLobby = "CONNECT_TO_LOBBY",
+  UpdateLobbyMember = "UPDATE_LOBBY_MEMBER",
+  DeleteLobby = "DELETE_LOBBY",
+  UpdateLobby = "UPDATE_LOBBY",
+  CreateLobby = "CREATE_LOBBY",
+  GetImage = "GET_IMAGE",
+  BrowserHandoff = "BROWSER_HANDOFF",
+  Overlay = "OVERLAY",
+  GuildTemplateBrowser = "GUILD_TEMPLATE_BROWSER",
+  GiftCodeBrowser = "GIFT_CODE_BROWSER",
+  BraintreePopupBridgeCallback = "BRAINTREE_POPUP_BRIDGE_CALLBACK",
+  ConnectionsCallback = "CONNECTIONS_CALLBACK",
+  DeepLink = "DEEP_LINK",
+  InviteBrowser = "INVITE_BROWSER",
+  OpenInviteDialog = "OPEN_INVITE_DIALOG",
+  AcceptActivityInvite = "ACCEPT_ACTIVITY_INVITE",
+  ActivityInviteUser = "ACTIVITY_INVITE_USER",
+  CloseActivityJoinRequest = "CLOSE_ACTIVITY_JOIN_REQUEST",
+  SetVoiceSettings2 = "SET_VOICE_SETTINGS_2",
+  SetUserVoiceSettings2 = "SET_USER_VOICE_SETTINGS_2",
+  CreateChannelInvite = "CREATE_CHANNEL_INVITE",
+  GetRelationships = "GET_RELATIONSHIPS",
 }
 
 /** Events DISPATCH'd from IPC. */
@@ -54,6 +99,22 @@ export enum RPCEvent {
   ActivityJoin = "ACTIVITY_JOIN",
   ActivityJoinRequest = "ACTIVITY_JOIN_REQUEST",
   ActivitySpectate = "ACTIVITY_SPECTATE",
+  CurrentUserUpdate = "CURRENT_USER_UPDATE",
+  RelationshipUpdate = "RELATIONSHIP_UPDATE",
+  VoiceSettingsUpdate2 = "VOICE_SETTINGS_UPDATE_2",
+  GameJoin = "GAME_JOIN",
+  GameSpectate = "GAME_SPECTATE",
+  LobbyDelete = "LOBBY_DELETE",
+  LobbyUpdate = "LOBBY_UPDATE",
+  LobbyMemberConnect = "LOBBY_MEMBER_CONNECT",
+  LobbyMemberDisconnect = "LOBBY_MEMBER_DISCONNECT",
+  LobbyMemberUpdate = "LOBBY_MEMBER_UPDATE",
+  LobbyMessage = "LOBBY_MESSAGE",
+  Overlay = "OVERLAY",
+  OverlayUpdate = "OVERLAY_UPDATE",
+  EntitlementCreate = "ENTITLEMENT_CREATE",
+  EntitlementDelete = "ENTITLEMENT_DELETE",
+  UserAchievementUpdate = "USER_ACHIEVEMENT_UPDATE",
 }
 
 /** Nitro type of User. */
@@ -221,4 +282,42 @@ export interface Guild {
 export interface PartialGuild {
   id: string;
   name: string;
+}
+
+export interface GetImageOptions {
+  type: "user";
+  id: string;
+  format: "png" | "apng" | "webp" | "gif" | "jpg";
+  size: number;
+}
+
+export enum LobbyType {
+  Private = 1,
+  Public = 2,
+}
+
+export interface LobbyMetadata {
+  [name: string]: string | number;
+}
+
+export interface LobbyOptions {
+  type?: LobbyType;
+  owner_id?: string;
+  capacity?: number;
+  metadata?: LobbyMetadata;
+  locked?: boolean;
+}
+
+export interface Lobby {
+  application_id: string;
+  capacity: number;
+  id: string;
+  locked: boolean;
+  members: Array<{ metadata: LobbyMetadata; user: User }>;
+  metadata: LobbyMetadata;
+  owner_id: string;
+  region: string;
+  secret: string;
+  type: LobbyType;
+  voice_states: VoiceState[];
 }

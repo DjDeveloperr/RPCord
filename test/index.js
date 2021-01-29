@@ -1,26 +1,34 @@
 const { RPClient } = require("../dist/client");
+const { Packet } = require("../dist/packet");
+const { OpCode, Command } = require("../dist/types");
 const { id, secret } = require("./config.json");
 
-const ipc = new RPClient(id, {
+const rpc = new RPClient("663356714376101889", {
   secret,
   scopes: ["rpc", "messages.read"],
 });
 
-ipc.on("messageCreate", (msg) => {
+rpc.on("messageCreate", (msg) => {
   console.log(msg);
 });
 
-ipc.connect().then(() => {
-  console.log("Connected!", ipc.user.username + "#" + ipc.user.discriminator);
+rpc.connect().then(async () => {
+  console.log("Connected!", rpc.user.username + "#" + rpc.user.discriminator);
 
-  ipc.authorize().then(() => {
-    console.log("Auth Complete!");
+  rpc.ipc.on("packet", console.log);
+  const lobby = await rpc.createLobby({});
+  console.log("Lobby", lobby);
+  await rpc.updateLobby(lobby.id, { type: 2 });
+  console.log(await rpc.searchLobbies());
 
-    ipc.subscribe("MESSAGE_CREATE", {
-      // dont forget to replace this channel id with the one you want to listen messages for
-      channel_id: "783319033730564098",
-    }).then(() => {
-      console.log("Subscribed!");
-    });
-  })
+  // rpc.authorize().then(() => {
+  //   console.log("Auth Complete!");
+
+  //   rpc.subscribe("MESSAGE_CREATE", {
+  //     // dont forget to replace this channel id with the one you want to listen messages for
+  //     channel_id: "783319033730564098",
+  //   }).then(() => {
+  //     console.log("Subscribed!");
+  //   });
+  // })
 });
