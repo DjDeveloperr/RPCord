@@ -22,7 +22,7 @@
 
 • **auto\_threshold**: *boolean*
 
-Defined in: [src/types.ts:181](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L181)
+Defined in: [src/types.ts:181](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L181)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **delay**: *number*
 
-Defined in: [src/types.ts:184](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L184)
+Defined in: [src/types.ts:184](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L184)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **shortcut**: [*ShortcutKeyCombo*](shortcutkeycombo.md)
 
-Defined in: [src/types.ts:183](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L183)
+Defined in: [src/types.ts:183](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L183)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **threshold**: *number*
 
-Defined in: [src/types.ts:182](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L182)
+Defined in: [src/types.ts:182](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L182)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **type**: *string*
 
-Defined in: [src/types.ts:180](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L180)
+Defined in: [src/types.ts:180](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L180)

@@ -19,7 +19,7 @@
 
 • `Optional` **end**: *undefined* \| *number*
 
-Defined in: [src/presence.ts:11](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L11)
+Defined in: [src/presence.ts:11](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/presence.ts#L11)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • `Optional` **start**: *undefined* \| *number*
 
-Defined in: [src/presence.ts:10](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L10)
+Defined in: [src/presence.ts:10](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/presence.ts#L10)

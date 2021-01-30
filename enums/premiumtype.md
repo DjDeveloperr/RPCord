@@ -18,7 +18,7 @@ Nitro type of User.
 
 • **Nitro**: = 2
 
-Defined in: [src/types.ts:124](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L124)
+Defined in: [src/types.ts:124](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L124)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **NitroClassic**: = 1
 
-Defined in: [src/types.ts:123](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L123)
+Defined in: [src/types.ts:123](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L123)
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • **None**: = 0
 
-Defined in: [src/types.ts:122](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L122)
+Defined in: [src/types.ts:122](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L122)
