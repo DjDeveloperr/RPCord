@@ -19,7 +19,7 @@
 
 • **id**: *string*
 
-Defined in: [src/types.ts:283](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L283)
+Defined in: [src/types.ts:283](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L283)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:284](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L284)
+Defined in: [src/types.ts:284](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L284)

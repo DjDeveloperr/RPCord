@@ -21,7 +21,7 @@
 
 • `Optional` **large\_image**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:20](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L20)
+Defined in: [src/presence.ts:20](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L20)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • `Optional` **large\_text**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:21](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L21)
+Defined in: [src/presence.ts:21](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L21)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • `Optional` **small\_image**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:22](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L22)
+Defined in: [src/presence.ts:22](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L22)
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • `Optional` **small\_text**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:23](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L23)
+Defined in: [src/presence.ts:23](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L23)

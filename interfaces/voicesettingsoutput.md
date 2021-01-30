@@ -24,7 +24,7 @@
 
 Inherited from: [VoiceSettingsInput](voicesettingsinput.md).[available_devices](voicesettingsinput.md#available_devices)
 
-Defined in: [src/types.ts:168](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L168)
+Defined in: [src/types.ts:168](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L168)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 Inherited from: [VoiceSettingsInput](voicesettingsinput.md).[device_id](voicesettingsinput.md#device_id)
 
-Defined in: [src/types.ts:166](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L166)
+Defined in: [src/types.ts:166](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L166)
 
 ___
 
@@ -44,4 +44,4 @@ ___
 
 Inherited from: [VoiceSettingsInput](voicesettingsinput.md).[volume](voicesettingsinput.md#volume)
 
-Defined in: [src/types.ts:167](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L167)
+Defined in: [src/types.ts:167](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L167)

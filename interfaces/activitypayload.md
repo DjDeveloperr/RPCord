@@ -36,7 +36,7 @@
 
 • `Optional` **application\_id**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:52](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L52)
+Defined in: [src/presence.ts:52](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L52)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • `Optional` **assets**: *undefined* \| [*ActivityAssets*](activityassets.md)
 
-Defined in: [src/presence.ts:57](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L57)
+Defined in: [src/presence.ts:57](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L57)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • `Optional` **buttons**: *undefined* \| [*ActivityButton*](activitybutton.md)[]
 
-Defined in: [src/presence.ts:60](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L60)
+Defined in: [src/presence.ts:60](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L60)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • `Optional` **created\_at**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:50](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L50)
+Defined in: [src/presence.ts:50](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L50)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • `Optional` **details**: *undefined* \| *null* \| *string*
 
-Defined in: [src/presence.ts:53](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L53)
+Defined in: [src/presence.ts:53](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L53)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • `Optional` **emoji**: *any*
 
-Defined in: [src/presence.ts:55](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L55)
+Defined in: [src/presence.ts:55](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L55)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • `Optional` **flags**: *undefined* \| *number*
 
-Defined in: [src/presence.ts:61](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L61)
+Defined in: [src/presence.ts:61](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L61)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • `Optional` **instance**: *undefined* \| *boolean*
 
-Defined in: [src/presence.ts:59](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L59)
+Defined in: [src/presence.ts:59](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L59)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • `Optional` **name**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:47](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L47)
+Defined in: [src/presence.ts:47](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L47)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • `Optional` **party**: *undefined* \| [*ActivityParty*](activityparty.md)
 
-Defined in: [src/presence.ts:56](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L56)
+Defined in: [src/presence.ts:56](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L56)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 • `Optional` **secrets**: *undefined* \| [*ActivitySecrets*](activitysecrets.md)
 
-Defined in: [src/presence.ts:58](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L58)
+Defined in: [src/presence.ts:58](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L58)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 • `Optional` **state**: *undefined* \| *null* \| *string*
 
-Defined in: [src/presence.ts:54](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L54)
+Defined in: [src/presence.ts:54](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L54)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 • `Optional` **timestamps**: *undefined* \| [*ActivityTimestamps*](activitytimestamps.md)
 
-Defined in: [src/presence.ts:51](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L51)
+Defined in: [src/presence.ts:51](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L51)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 • `Optional` **type**: *undefined* \| [*Game*](../enums/activitytype.md#game) \| [*Streaming*](../enums/activitytype.md#streaming) \| [*Listening*](../enums/activitytype.md#listening) \| [*Custom*](../enums/activitytype.md#custom) \| [*Competing*](../enums/activitytype.md#competing)
 
-Defined in: [src/presence.ts:48](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L48)
+Defined in: [src/presence.ts:48](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L48)
 
 ___
 
@@ -148,4 +148,4 @@ ___
 
 • `Optional` **url**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:49](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L49)
+Defined in: [src/presence.ts:49](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L49)

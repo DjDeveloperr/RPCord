@@ -18,7 +18,7 @@
 
 • **Competing**: = 4
 
-Defined in: [src/presence.ts:6](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L6)
+Defined in: [src/presence.ts:6](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L6)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **Custom**: = 3
 
-Defined in: [src/presence.ts:5](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L5)
+Defined in: [src/presence.ts:5](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L5)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **Game**: = 0
 
-Defined in: [src/presence.ts:2](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L2)
+Defined in: [src/presence.ts:2](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L2)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **Listening**: = 2
 
-Defined in: [src/presence.ts:4](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L4)
+Defined in: [src/presence.ts:4](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L4)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **Streaming**: = 1
 
-Defined in: [src/presence.ts:3](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/presence.ts#L3)
+Defined in: [src/presence.ts:3](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/presence.ts#L3)

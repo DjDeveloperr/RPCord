@@ -21,7 +21,7 @@
 
 • `Optional` **mute**: *undefined* \| *boolean*
 
-Defined in: [src/types.ts:154](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L154)
+Defined in: [src/types.ts:154](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L154)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • `Optional` **pan**: *undefined* \| [*UserVoiceSettingsPan*](uservoicesettingspan.md)
 
-Defined in: [src/types.ts:152](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L152)
+Defined in: [src/types.ts:152](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L152)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **user\_id**: *string*
 
-Defined in: [src/types.ts:151](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L151)
+Defined in: [src/types.ts:151](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L151)
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • `Optional` **volume**: *undefined* \| *number*
 
-Defined in: [src/types.ts:153](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L153)
+Defined in: [src/types.ts:153](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L153)

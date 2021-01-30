@@ -22,7 +22,7 @@
 
 • `Optional` **capacity**: *undefined* \| *number*
 
-Defined in: [src/types.ts:306](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L306)
+Defined in: [src/types.ts:306](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L306)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • `Optional` **locked**: *undefined* \| *boolean*
 
-Defined in: [src/types.ts:308](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L308)
+Defined in: [src/types.ts:308](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L308)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • `Optional` **metadata**: *undefined* \| [*LobbyMetadata*](lobbymetadata.md)
 
-Defined in: [src/types.ts:307](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L307)
+Defined in: [src/types.ts:307](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L307)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • `Optional` **owner\_id**: *undefined* \| *string*
 
-Defined in: [src/types.ts:305](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L305)
+Defined in: [src/types.ts:305](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L305)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • `Optional` **type**: *undefined* \| [*Private*](../enums/lobbytype.md#private) \| [*Public*](../enums/lobbytype.md#public)
 
-Defined in: [src/types.ts:304](https://github.com/DjDeveloperr/RPCord/blob/91f1aca/src/types.ts#L304)
+Defined in: [src/types.ts:304](https://github.com/DjDeveloperr/RPCord/blob/280c12e/src/types.ts#L304)
