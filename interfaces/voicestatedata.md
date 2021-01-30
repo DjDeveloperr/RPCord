@@ -22,7 +22,7 @@
 
 • **deaf**: *boolean*
 
-Defined in: [src/types.ts:237](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L237)
+Defined in: [src/types.ts:237](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L237)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **mute**: *boolean*
 
-Defined in: [src/types.ts:236](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L236)
+Defined in: [src/types.ts:236](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L236)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **self\_deaf**: *boolean*
 
-Defined in: [src/types.ts:239](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L239)
+Defined in: [src/types.ts:239](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L239)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **self\_mute**: *boolean*
 
-Defined in: [src/types.ts:238](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L238)
+Defined in: [src/types.ts:238](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L238)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **suppress**: *boolean*
 
-Defined in: [src/types.ts:240](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L240)
+Defined in: [src/types.ts:240](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L240)

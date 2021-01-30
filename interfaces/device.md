@@ -26,7 +26,7 @@
 
 • `Optional` **automatic\_gain\_control**: *undefined* \| *boolean*
 
-Defined in: [src/types.ts:231](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L231)
+Defined in: [src/types.ts:231](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L231)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • `Optional` **echo\_cancellation**: *undefined* \| *boolean*
 
-Defined in: [src/types.ts:229](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L229)
+Defined in: [src/types.ts:229](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L229)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • `Optional` **hardware\_mute**: *undefined* \| *boolean*
 
-Defined in: [src/types.ts:232](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L232)
+Defined in: [src/types.ts:232](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L232)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:225](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L225)
+Defined in: [src/types.ts:225](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L225)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **model**: [*DeviceModel*](devicemodel.md)
 
-Defined in: [src/types.ts:227](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L227)
+Defined in: [src/types.ts:227](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L227)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • `Optional` **noise\_cancellation**: *undefined* \| *boolean*
 
-Defined in: [src/types.ts:230](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L230)
+Defined in: [src/types.ts:230](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L230)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **related**: *string*[]
 
-Defined in: [src/types.ts:228](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L228)
+Defined in: [src/types.ts:228](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L228)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **type**: [*DeviceType*](../enums/devicetype.md)
 
-Defined in: [src/types.ts:224](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L224)
+Defined in: [src/types.ts:224](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L224)
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **vendor**: [*DeviceVendor*](devicevendor.md)
 
-Defined in: [src/types.ts:226](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L226)
+Defined in: [src/types.ts:226](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L226)

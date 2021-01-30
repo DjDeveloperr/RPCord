@@ -22,7 +22,7 @@
 
 • **available\_devices**: *any*[]
 
-Defined in: [src/types.ts:168](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L168)
+Defined in: [src/types.ts:168](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L168)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **device\_id**: *string*
 
-Defined in: [src/types.ts:166](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L166)
+Defined in: [src/types.ts:166](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L166)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **volume**: *number*
 
-Defined in: [src/types.ts:167](https://github.com/DjDeveloperr/RPCord/blob/a435209/src/types.ts#L167)
+Defined in: [src/types.ts:167](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L167)
