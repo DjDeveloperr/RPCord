@@ -17,7 +17,7 @@
 
 • **GamepadButton**: = 3
 
-Defined in: [src/types.ts:191](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L191)
+Defined in: [src/types.ts:191](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L191)
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **KeyboardKey**: = 0
 
-Defined in: [src/types.ts:188](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L188)
+Defined in: [src/types.ts:188](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L188)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **KeyboardModifierKey**: = 2
 
-Defined in: [src/types.ts:190](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L190)
+Defined in: [src/types.ts:190](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L190)
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **MouseButton**: = 1
 
-Defined in: [src/types.ts:189](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L189)
+Defined in: [src/types.ts:189](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L189)

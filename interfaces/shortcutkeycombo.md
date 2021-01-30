@@ -20,7 +20,7 @@
 
 • **code**: *number*
 
-Defined in: [src/types.ts:175](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L175)
+Defined in: [src/types.ts:175](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L175)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:176](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L176)
+Defined in: [src/types.ts:176](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L176)
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **type**: [*KeyType*](../enums/keytype.md)
 
-Defined in: [src/types.ts:174](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L174)
+Defined in: [src/types.ts:174](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L174)

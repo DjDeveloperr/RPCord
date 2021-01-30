@@ -16,7 +16,7 @@
 
 • **AudioInput**: = "audioinput"
 
-Defined in: [src/types.ts:218](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L218)
+Defined in: [src/types.ts:218](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L218)
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **AudioOutput**: = "audiooutput"
 
-Defined in: [src/types.ts:219](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L219)
+Defined in: [src/types.ts:219](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L219)
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **VideoInput**: = "videoinput"
 
-Defined in: [src/types.ts:220](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L220)
+Defined in: [src/types.ts:220](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L220)

@@ -19,7 +19,7 @@
 
 • **Instance**: = 1
 
-Defined in: [src/presence.ts:33](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/presence.ts#L33)
+Defined in: [src/presence.ts:33](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L33)
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 • **Join**: = 2
 
-Defined in: [src/presence.ts:34](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/presence.ts#L34)
+Defined in: [src/presence.ts:34](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L34)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **JoinRequest**: = 8
 
-Defined in: [src/presence.ts:36](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/presence.ts#L36)
+Defined in: [src/presence.ts:36](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L36)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **Play**: = 32
 
-Defined in: [src/presence.ts:38](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/presence.ts#L38)
+Defined in: [src/presence.ts:38](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L38)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **Spectate**: = 4
 
-Defined in: [src/presence.ts:35](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/presence.ts#L35)
+Defined in: [src/presence.ts:35](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L35)
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **Sync**: = 16
 
-Defined in: [src/presence.ts:37](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/presence.ts#L37)
+Defined in: [src/presence.ts:37](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L37)

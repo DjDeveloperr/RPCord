@@ -22,7 +22,7 @@
 
 • **description**: *string*
 
-Defined in: [src/types.ts:159](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L159)
+Defined in: [src/types.ts:159](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L159)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **icon**: *string*
 
-Defined in: [src/types.ts:160](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L160)
+Defined in: [src/types.ts:160](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L160)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:158](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L158)
+Defined in: [src/types.ts:158](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L158)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:162](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L162)
+Defined in: [src/types.ts:162](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L162)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **rpc\_origins**: *string*[]
 
-Defined in: [src/types.ts:161](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L161)
+Defined in: [src/types.ts:161](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L161)

@@ -68,7 +68,7 @@ Defined in: node_modules/@types/node/events.d.ts:18
 
 • `Optional` **socket**: *undefined* \| *Socket*
 
-Defined in: [src/ipc.ts:26](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/ipc.ts#L26)
+Defined in: [src/ipc.ts:26](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/ipc.ts#L26)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/ipc.ts:48](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/ipc.ts#L48)
+Defined in: [src/ipc.ts:48](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/ipc.ts#L48)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 **Returns:** *Promise*<*void*\>
 
-Defined in: [src/ipc.ts:28](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/ipc.ts#L28)
+Defined in: [src/ipc.ts:28](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/ipc.ts#L28)
 
 ___
 
@@ -366,7 +366,7 @@ Name | Type |
 
 **Returns:** *string*
 
-Defined in: [src/ipc.ts:42](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/ipc.ts#L42)
+Defined in: [src/ipc.ts:42](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/ipc.ts#L42)
 
 ___
 

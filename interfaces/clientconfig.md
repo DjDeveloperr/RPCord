@@ -22,7 +22,7 @@ Client Config sent on Ready event.
 
 • **api\_endpoint**: *string*
 
-Defined in: [src/types.ts:141](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L141)
+Defined in: [src/types.ts:141](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L141)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **cdn\_host**: *string*
 
-Defined in: [src/types.ts:140](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L140)
+Defined in: [src/types.ts:140](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L140)
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **environment**: *string*
 
-Defined in: [src/types.ts:142](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L142)
+Defined in: [src/types.ts:142](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L142)

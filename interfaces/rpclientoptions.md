@@ -21,7 +21,7 @@ Client options to initialize.
 
 • `Optional` **scopes**: *undefined* \| *string*[]
 
-Defined in: [src/client.ts:31](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/client.ts#L31)
+Defined in: [src/client.ts:31](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/client.ts#L31)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • `Optional` **secret**: *undefined* \| *string*
 
-Defined in: [src/client.ts:30](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/client.ts#L30)
+Defined in: [src/client.ts:30](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/client.ts#L30)

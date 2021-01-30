@@ -21,7 +21,7 @@
 
 • **format**: *png* \| *apng* \| *webp* \| *gif* \| *jpg*
 
-Defined in: [src/types.ts:290](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L290)
+Defined in: [src/types.ts:290](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L290)
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:289](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L289)
+Defined in: [src/types.ts:289](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L289)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **size**: *number*
 
-Defined in: [src/types.ts:291](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L291)
+Defined in: [src/types.ts:291](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L291)
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **type**: *user*
 
-Defined in: [src/types.ts:288](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L288)
+Defined in: [src/types.ts:288](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L288)

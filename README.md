@@ -2,6 +2,8 @@ rpcord / [Exports](modules.md)
 
 # RPCord
 
+![[NPM](https://npmjs.org/package/rpcord)](https://img.shields.io/npm/v/rpcord)
+
 Module to interact with local Discord Client using IPC.
 
 ## Features
@@ -9,6 +11,10 @@ Module to interact with local Discord Client using IPC.
 - All RPC Commands supported.
 - Simple interface.
 - Made with TypeScript.
+
+## Docs
+
+Read the docs [here](https://github.com/DjDeveloperr/RPCord/blob/gh-pages/modules.md).
 
 ## Installation
 
@@ -38,8 +44,14 @@ rpc.connect().then(() => {
       .setStartTimestamp(Date.now())
       .setPartyID("12345")
       .setPartySize(1, 2)
-      .addButton({ label: "RPCord Repo", url: "https://github.com/DjDeveloperr/RPCord" })
-      .addButton({ label: "RPCord NPM", url: "https://npmjs.org/package/rpcord" })
+      .addButton({
+        label: "RPCord Repo",
+        url: "https://github.com/DjDeveloperr/RPCord",
+      })
+      .addButton({
+        label: "RPCord NPM",
+        url: "https://npmjs.org/package/rpcord",
+      })
   );
 });
 ```

@@ -52,7 +52,7 @@ Events DISPATCH'd from IPC.
 
 • **ActivityJoin**: = "ACTIVITY\_JOIN"
 
-Defined in: [src/types.ts:99](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L99)
+Defined in: [src/types.ts:99](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L99)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **ActivityJoinRequest**: = "ACTIVITY\_JOIN\_REQUEST"
 
-Defined in: [src/types.ts:100](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L100)
+Defined in: [src/types.ts:100](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L100)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **ActivitySpectate**: = "ACTIVITY\_SPECTATE"
 
-Defined in: [src/types.ts:101](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L101)
+Defined in: [src/types.ts:101](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L101)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **CaptureShortcutChange**: = "CAPTURE\_SHORTCUT\_CHANGE"
 
-Defined in: [src/types.ts:98](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L98)
+Defined in: [src/types.ts:98](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L98)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **ChannelCreate**: = "CHANNEL\_CREATE"
 
-Defined in: [src/types.ts:85](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L85)
+Defined in: [src/types.ts:85](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L85)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **CurrentUserUpdate**: = "CURRENT\_USER\_UPDATE"
 
-Defined in: [src/types.ts:102](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L102)
+Defined in: [src/types.ts:102](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L102)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **EntitlementCreate**: = "ENTITLEMENT\_CREATE"
 
-Defined in: [src/types.ts:115](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L115)
+Defined in: [src/types.ts:115](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L115)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **EntitlementDelete**: = "ENTITLEMENT\_DELETE"
 
-Defined in: [src/types.ts:116](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L116)
+Defined in: [src/types.ts:116](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L116)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 • **Error**: = "ERROR"
 
-Defined in: [src/types.ts:82](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L82)
+Defined in: [src/types.ts:82](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L82)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 • **GameJoin**: = "GAME\_JOIN"
 
-Defined in: [src/types.ts:105](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L105)
+Defined in: [src/types.ts:105](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L105)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 • **GameSpectate**: = "GAME\_SPECTATE"
 
-Defined in: [src/types.ts:106](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L106)
+Defined in: [src/types.ts:106](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L106)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 • **GuildCreate**: = "GUILD\_CREATE"
 
-Defined in: [src/types.ts:84](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L84)
+Defined in: [src/types.ts:84](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L84)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 • **GuildStatus**: = "GUILD\_STATUS"
 
-Defined in: [src/types.ts:83](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L83)
+Defined in: [src/types.ts:83](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L83)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 • **LobbyDelete**: = "LOBBY\_DELETE"
 
-Defined in: [src/types.ts:107](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L107)
+Defined in: [src/types.ts:107](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L107)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 • **LobbyMemberConnect**: = "LOBBY\_MEMBER\_CONNECT"
 
-Defined in: [src/types.ts:109](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L109)
+Defined in: [src/types.ts:109](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L109)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 • **LobbyMemberDisconnect**: = "LOBBY\_MEMBER\_DISCONNECT"
 
-Defined in: [src/types.ts:110](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L110)
+Defined in: [src/types.ts:110](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L110)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 • **LobbyMemberUpdate**: = "LOBBY\_MEMBER\_UPDATE"
 
-Defined in: [src/types.ts:111](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L111)
+Defined in: [src/types.ts:111](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L111)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 • **LobbyMessage**: = "LOBBY\_MESSAGE"
 
-Defined in: [src/types.ts:112](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L112)
+Defined in: [src/types.ts:112](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L112)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 • **LobbyUpdate**: = "LOBBY\_UPDATE"
 
-Defined in: [src/types.ts:108](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L108)
+Defined in: [src/types.ts:108](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L108)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 • **MessageCreate**: = "MESSAGE\_CREATE"
 
-Defined in: [src/types.ts:94](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L94)
+Defined in: [src/types.ts:94](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L94)
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 • **MessageDelete**: = "MESSAGE\_DELETE"
 
-Defined in: [src/types.ts:96](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L96)
+Defined in: [src/types.ts:96](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L96)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 • **MessageUpdate**: = "MESSAGE\_UPDATE"
 
-Defined in: [src/types.ts:95](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L95)
+Defined in: [src/types.ts:95](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L95)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 • **NotificationCreate**: = "NOTIFICATION\_CREATE"
 
-Defined in: [src/types.ts:97](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L97)
+Defined in: [src/types.ts:97](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L97)
 
 ___
 
@@ -236,7 +236,7 @@ ___
 
 • **Overlay**: = "OVERLAY"
 
-Defined in: [src/types.ts:113](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L113)
+Defined in: [src/types.ts:113](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L113)
 
 ___
 
@@ -244,7 +244,7 @@ ___
 
 • **OverlayUpdate**: = "OVERLAY\_UPDATE"
 
-Defined in: [src/types.ts:114](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L114)
+Defined in: [src/types.ts:114](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L114)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 • **Ready**: = "READY"
 
-Defined in: [src/types.ts:81](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L81)
+Defined in: [src/types.ts:81](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L81)
 
 ___
 
@@ -260,7 +260,7 @@ ___
 
 • **RelationshipUpdate**: = "RELATIONSHIP\_UPDATE"
 
-Defined in: [src/types.ts:103](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L103)
+Defined in: [src/types.ts:103](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L103)
 
 ___
 
@@ -268,7 +268,7 @@ ___
 
 • **SpeakingStart**: = "SPEAKING\_START"
 
-Defined in: [src/types.ts:92](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L92)
+Defined in: [src/types.ts:92](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L92)
 
 ___
 
@@ -276,7 +276,7 @@ ___
 
 • **SpeakingStop**: = "SPEAKING\_STOP"
 
-Defined in: [src/types.ts:93](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L93)
+Defined in: [src/types.ts:93](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L93)
 
 ___
 
@@ -284,7 +284,7 @@ ___
 
 • **UserAchievementUpdate**: = "USER\_ACHIEVEMENT\_UPDATE"
 
-Defined in: [src/types.ts:117](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L117)
+Defined in: [src/types.ts:117](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L117)
 
 ___
 
@@ -292,7 +292,7 @@ ___
 
 • **VoiceChannelSelect**: = "VOICE\_CHANNEL\_SELECT"
 
-Defined in: [src/types.ts:86](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L86)
+Defined in: [src/types.ts:86](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L86)
 
 ___
 
@@ -300,7 +300,7 @@ ___
 
 • **VoiceConnectionStatus**: = "VOICE\_CONNECTION\_STATUS"
 
-Defined in: [src/types.ts:91](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L91)
+Defined in: [src/types.ts:91](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L91)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 • **VoiceSettingsUpdate**: = "VOICE\_SETTINGS\_UPDATE"
 
-Defined in: [src/types.ts:90](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L90)
+Defined in: [src/types.ts:90](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L90)
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 • **VoiceSettingsUpdate2**: = "VOICE\_SETTINGS\_UPDATE\_2"
 
-Defined in: [src/types.ts:104](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L104)
+Defined in: [src/types.ts:104](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L104)
 
 ___
 
@@ -324,7 +324,7 @@ ___
 
 • **VoiceStateCreate**: = "VOICE\_STATE\_CREATE"
 
-Defined in: [src/types.ts:87](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L87)
+Defined in: [src/types.ts:87](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L87)
 
 ___
 
@@ -332,7 +332,7 @@ ___
 
 • **VoiceStateDelete**: = "VOICE\_STATE\_DELETE"
 
-Defined in: [src/types.ts:89](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L89)
+Defined in: [src/types.ts:89](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L89)
 
 ___
 
@@ -340,4 +340,4 @@ ___
 
 • **VoiceStateUpdate**: = "VOICE\_STATE\_UPDATE"
 
-Defined in: [src/types.ts:88](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/types.ts#L88)
+Defined in: [src/types.ts:88](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L88)

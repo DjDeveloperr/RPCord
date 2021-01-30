@@ -77,7 +77,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<Socket\>
 
-Defined in: [src/ipc.ts:7](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/ipc.ts#L7)
+Defined in: [src/ipc.ts:7](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/ipc.ts#L7)
 
 ___
 
@@ -93,4 +93,4 @@ Name | Type |
 
 **Returns:** *string*
 
-Defined in: [src/util.ts:1](https://github.com/DjDeveloperr/RPCord/blob/ac2ab55/src/util.ts#L1)
+Defined in: [src/util.ts:1](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/util.ts#L1)
