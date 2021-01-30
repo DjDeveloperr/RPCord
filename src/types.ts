@@ -321,3 +321,9 @@ export interface Lobby {
   type: LobbyType;
   voice_states: VoiceState[];
 }
+
+export interface NetworkingConfig {
+  address: string;
+  /** Not the token you think of, lol. */
+  token: string;
+}

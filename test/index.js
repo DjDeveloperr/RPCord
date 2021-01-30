@@ -16,10 +16,13 @@ rpc.connect().then(async () => {
   console.log("Connected!", rpc.user.username + "#" + rpc.user.discriminator);
 
   rpc.ipc.on("packet", console.log);
-  const lobby = await rpc.createLobby({});
-  console.log("Lobby", lobby);
-  await rpc.updateLobby(lobby.id, { type: 2 });
-  console.log(await rpc.searchLobbies());
+  console.log(await rpc.getSkus());
+  console.log(await rpc.getEntitlements());
+  // await rpc.openOverlayVoiceSettings();
+  // const lobby = await rpc.createLobby({});
+  // console.log("Lobby", lobby);
+  // // await rpc.updateLobby(lobby.id, {});
+  // console.log(await rpc.searchLobbies());
 
   // rpc.authorize().then(() => {
   //   console.log("Auth Complete!");
