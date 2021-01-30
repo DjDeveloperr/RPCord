@@ -24,7 +24,6 @@ import {
 import fetch from "node-fetch";
 import { Presence } from "./presence";
 import { v4 } from "uuid";
-import { time } from "console";
 
 /** Client options to initialize. */
 export interface RPClientOptions {
