@@ -20,6 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Build
         run: |
+          npm i -g typescript
           npm i
           npm i -g typedoc typedoc-plugin-markdown
           npx typedoc --plugin typedoc-plugin-markdown src/index.ts
