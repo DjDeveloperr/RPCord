@@ -1017,7 +1017,7 @@ export class RPClient extends EventEmitter {
     return wait;
   }
 
-  /** Disconnect from a Lobby Voice */
+  /** Connect to a Lobby Voice */
   async connectToLobbyVoice(id: string, timeout = 5000): Promise<Lobby> {
     const nonce = v4();
 
@@ -1038,7 +1038,7 @@ export class RPClient extends EventEmitter {
     return wait;
   }
 
-  /** Gets an Image's Data (base64 URI). Supports only type: "1" ATM which is User */
+  /** Gets an Image's Data (base64 URI). Supports only type: "1" ATM which is User Avatar */
   async getImage(options: GetImageOptions, timeout = 5000): Promise<string> {
     const nonce = v4();
 
