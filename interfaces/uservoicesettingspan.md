@@ -19,7 +19,7 @@
 
 • **left**: *number*
 
-Defined in: [src/types.ts:146](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L146)
+Defined in: [src/types.ts:146](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L146)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **right**: *number*
 
-Defined in: [src/types.ts:147](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L147)
+Defined in: [src/types.ts:147](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L147)

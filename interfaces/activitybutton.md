@@ -19,7 +19,7 @@
 
 • **label**: *string*
 
-Defined in: [src/presence.ts:42](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L42)
+Defined in: [src/presence.ts:42](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/presence.ts#L42)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/presence.ts:43](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/presence.ts#L43)
+Defined in: [src/presence.ts:43](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/presence.ts#L43)

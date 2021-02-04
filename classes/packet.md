@@ -38,7 +38,7 @@ Name | Type |
 
 **Returns:** [*Packet*](packet.md)
 
-Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/packet.ts#L5)
+Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/packet.ts#L5)
 
 ## Properties
 
@@ -46,7 +46,7 @@ Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/51e0bc
 
 • **data**: *any*
 
-Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/packet.ts#L5)
+Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/packet.ts#L5)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **op**: [*OpCode*](../enums/opcode.md)
 
-Defined in: [src/packet.ts:4](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/packet.ts#L4)
+Defined in: [src/packet.ts:4](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/packet.ts#L4)
 
 ## Methods
 
@@ -64,7 +64,7 @@ Defined in: [src/packet.ts:4](https://github.com/DjDeveloperr/RPCord/blob/51e0bc
 
 **Returns:** *Buffer*
 
-Defined in: [src/packet.ts:12](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/packet.ts#L12)
+Defined in: [src/packet.ts:12](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/packet.ts#L12)
 
 ___
 
@@ -80,7 +80,7 @@ Name | Type |
 
 **Returns:** [*Packet*](packet.md)
 
-Defined in: [src/packet.ts:25](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/packet.ts#L25)
+Defined in: [src/packet.ts:25](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/packet.ts#L25)
 
 ___
 
@@ -96,4 +96,4 @@ Name | Type |
 
 **Returns:** *undefined* \| [*Packet*](packet.md)
 
-Defined in: [src/packet.ts:39](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/packet.ts#L39)
+Defined in: [src/packet.ts:39](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/packet.ts#L39)

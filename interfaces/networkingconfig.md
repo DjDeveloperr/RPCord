@@ -19,7 +19,7 @@
 
 • **address**: *string*
 
-Defined in: [src/types.ts:326](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L326)
+Defined in: [src/types.ts:326](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L326)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 Not the token you think of, lol.
 
-Defined in: [src/types.ts:328](https://github.com/DjDeveloperr/RPCord/blob/51e0bc3/src/types.ts#L328)
+Defined in: [src/types.ts:328](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L328)
