@@ -22,4 +22,4 @@
 
 • **id**: *string*
 
-Defined in: [src/types.ts:253](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L253)
+Defined in: [src/types.ts:253](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L253)

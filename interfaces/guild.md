@@ -20,7 +20,7 @@
 
 • **icon\_url**: *null* \| *string*
 
-Defined in: [src/types.ts:279](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L279)
+Defined in: [src/types.ts:279](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L279)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:277](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L277)
+Defined in: [src/types.ts:277](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L277)
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:278](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L278)
+Defined in: [src/types.ts:278](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L278)

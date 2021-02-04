@@ -15,7 +15,7 @@
 
 • **Private**: = 1
 
-Defined in: [src/types.ts:295](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L295)
+Defined in: [src/types.ts:295](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L295)
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Public**: = 2
 
-Defined in: [src/types.ts:296](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L296)
+Defined in: [src/types.ts:296](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L296)

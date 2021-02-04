@@ -27,7 +27,7 @@
 
 • **automatic\_gain\_control**: *boolean*
 
-Defined in: [src/types.ts:198](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L198)
+Defined in: [src/types.ts:198](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L198)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **deaf**: *boolean*
 
-Defined in: [src/types.ts:203](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L203)
+Defined in: [src/types.ts:203](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L203)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **echo\_cancellation**: *boolean*
 
-Defined in: [src/types.ts:199](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L199)
+Defined in: [src/types.ts:199](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L199)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **input**: [*VoiceSettingsInput*](voicesettingsinput.md)
 
-Defined in: [src/types.ts:195](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L195)
+Defined in: [src/types.ts:195](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L195)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **mode**: [*VoiceSettingsMode*](voicesettingsmode.md)
 
-Defined in: [src/types.ts:197](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L197)
+Defined in: [src/types.ts:197](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L197)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **mute**: *boolean*
 
-Defined in: [src/types.ts:204](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L204)
+Defined in: [src/types.ts:204](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L204)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **noise\_cancellation**: *boolean*
 
-Defined in: [src/types.ts:200](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L200)
+Defined in: [src/types.ts:200](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L200)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **output**: [*VoiceSettingsOutput*](voicesettingsoutput.md)
 
-Defined in: [src/types.ts:196](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L196)
+Defined in: [src/types.ts:196](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L196)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **qos**: *boolean*
 
-Defined in: [src/types.ts:201](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L201)
+Defined in: [src/types.ts:201](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L201)
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 • **silence\_warning**: *boolean*
 
-Defined in: [src/types.ts:202](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/types.ts#L202)
+Defined in: [src/types.ts:202](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L202)

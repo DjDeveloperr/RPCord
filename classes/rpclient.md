@@ -121,7 +121,7 @@ Name | Type |
 
 **Returns:** [*RPClient*](rpclient.md)
 
-Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L65)
+Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L65)
 
 ## Properties
 
@@ -131,7 +131,7 @@ Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/308e2
 
 Access Token saved from `authenticate`
 
-Defined in: [src/client.ts:49](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L49)
+Defined in: [src/client.ts:49](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L49)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 Application object of the Client
 
-Defined in: [src/client.ts:63](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L63)
+Defined in: [src/client.ts:63](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L63)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 Auth Code saved from `authorize`
 
-Defined in: [src/client.ts:47](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L47)
+Defined in: [src/client.ts:47](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L47)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 Whether Client is Authenticated yet or not
 
-Defined in: [src/client.ts:45](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L45)
+Defined in: [src/client.ts:45](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L45)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 Whether Client is Authorized yet or not
 
-Defined in: [src/client.ts:43](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L43)
+Defined in: [src/client.ts:43](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L43)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 RPC Client Config (Discord)
 
-Defined in: [src/client.ts:57](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L57)
+Defined in: [src/client.ts:57](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L57)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 Whether Client is connected or not
 
-Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L65)
+Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L65)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 Expiration of Access Token
 
-Defined in: [src/client.ts:61](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L61)
+Defined in: [src/client.ts:61](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L61)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 Client ID
 
-Defined in: [src/client.ts:37](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L37)
+Defined in: [src/client.ts:37](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L37)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 Internal IPC
 
-Defined in: [src/client.ts:41](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L41)
+Defined in: [src/client.ts:41](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L41)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 Scopes to use for Authorization
 
-Defined in: [src/client.ts:51](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L51)
+Defined in: [src/client.ts:51](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L51)
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 Client Secret (for fetching Access Token from Auth Code)
 
-Defined in: [src/client.ts:53](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L53)
+Defined in: [src/client.ts:53](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L53)
 
 ___
 
@@ -251,7 +251,7 @@ ___
 
 Underlying User account of the Discord Client
 
-Defined in: [src/client.ts:55](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L55)
+Defined in: [src/client.ts:55](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L55)
 
 ___
 
@@ -261,7 +261,7 @@ ___
 
 User's cached Voice Settings
 
-Defined in: [src/client.ts:59](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L59)
+Defined in: [src/client.ts:59](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L59)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 Discord RPC Version
 
-Defined in: [src/client.ts:39](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L39)
+Defined in: [src/client.ts:39](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L39)
 
 ___
 
@@ -348,7 +348,7 @@ Name | Type |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:252](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L252)
+Defined in: [src/client.ts:252](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L252)
 
 ___
 
@@ -366,7 +366,7 @@ Name | Type |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:226](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L226)
+Defined in: [src/client.ts:226](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L226)
 
 ___
 
@@ -385,7 +385,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*ShortcutKeyCombo*](../interfaces/shortcutkeycombo.md)[]\>
 
-Defined in: [src/client.ts:557](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L557)
+Defined in: [src/client.ts:557](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L557)
 
 ___
 
@@ -403,7 +403,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:633](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L633)
+Defined in: [src/client.ts:633](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L633)
 
 ___
 
@@ -415,7 +415,7 @@ Connect to Discord IPC.
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:210](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L210)
+Defined in: [src/client.ts:210](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L210)
 
 ___
 
@@ -435,7 +435,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
 
-Defined in: [src/client.ts:954](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L954)
+Defined in: [src/client.ts:954](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L954)
 
 ___
 
@@ -454,7 +454,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
 
-Defined in: [src/client.ts:1021](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L1021)
+Defined in: [src/client.ts:1021](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1021)
 
 ___
 
@@ -473,7 +473,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
 
-Defined in: [src/client.ts:866](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L866)
+Defined in: [src/client.ts:866](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L866)
 
 ___
 
@@ -492,7 +492,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:933](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L933)
+Defined in: [src/client.ts:933](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L933)
 
 ___
 
@@ -504,7 +504,7 @@ Disconnect from Discord IPC
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:1086](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L1086)
+Defined in: [src/client.ts:1086](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1086)
 
 ___
 
@@ -523,7 +523,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
 
-Defined in: [src/client.ts:979](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L979)
+Defined in: [src/client.ts:979](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L979)
 
 ___
 
@@ -542,7 +542,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
 
-Defined in: [src/client.ts:1000](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L1000)
+Defined in: [src/client.ts:1000](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1000)
 
 ___
 
@@ -587,7 +587,7 @@ Name | Type |
 
 **Returns:** *Promise*<*undefined* \| *string*\>
 
-Defined in: [src/client.ts:273](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L273)
+Defined in: [src/client.ts:273](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L273)
 
 ___
 
@@ -606,7 +606,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:362](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L362)
+Defined in: [src/client.ts:362](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L362)
 
 ___
 
@@ -625,7 +625,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*PartialChannel*](../interfaces/partialchannel.md)[]\>
 
-Defined in: [src/client.ts:388](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L388)
+Defined in: [src/client.ts:388](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L388)
 
 ___
 
@@ -643,7 +643,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*any*[]\>
 
-Defined in: [src/client.ts:718](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L718)
+Defined in: [src/client.ts:718](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L718)
 
 ___
 
@@ -662,7 +662,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*Guild*](../interfaces/guild.md)\>
 
-Defined in: [src/client.ts:321](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L321)
+Defined in: [src/client.ts:321](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L321)
 
 ___
 
@@ -680,7 +680,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*PartialGuild*](../interfaces/partialguild.md)[]\>
 
-Defined in: [src/client.ts:343](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L343)
+Defined in: [src/client.ts:343](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L343)
 
 ___
 
@@ -699,7 +699,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*string*\>
 
-Defined in: [src/client.ts:1042](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L1042)
+Defined in: [src/client.ts:1042](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1042)
 
 ___
 
@@ -727,7 +727,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*NetworkingConfig*](../interfaces/networkingconfig.md)\>
 
-Defined in: [src/client.ts:738](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L738)
+Defined in: [src/client.ts:738](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L738)
 
 ___
 
@@ -745,7 +745,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*any*\>
 
-Defined in: [src/client.ts:645](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L645)
+Defined in: [src/client.ts:645](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L645)
 
 ___
 
@@ -763,7 +763,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:491](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L491)
+Defined in: [src/client.ts:491](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L491)
 
 ___
 
@@ -781,7 +781,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*any*[]\>
 
-Defined in: [src/client.ts:700](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L700)
+Defined in: [src/client.ts:700](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L700)
 
 ___
 
@@ -799,7 +799,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*any*[]\>
 
-Defined in: [src/client.ts:818](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L818)
+Defined in: [src/client.ts:818](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L818)
 
 ___
 
@@ -817,7 +817,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*VoiceSettings*](../interfaces/voicesettings.md)\>
 
-Defined in: [src/client.ts:512](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L512)
+Defined in: [src/client.ts:512](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L512)
 
 ___
 
@@ -867,7 +867,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*string*\>
 
-Defined in: [src/client.ts:798](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L798)
+Defined in: [src/client.ts:798](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L798)
 
 ___
 
@@ -885,7 +885,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*any*\>
 
-Defined in: [src/client.ts:778](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L778)
+Defined in: [src/client.ts:778](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L778)
 
 ___
 
@@ -903,7 +903,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*any*\>
 
-Defined in: [src/client.ts:758](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L758)
+Defined in: [src/client.ts:758](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L758)
 
 ___
 
@@ -972,7 +972,7 @@ Name | Type |
 
 **Returns:** [*RPClient*](rpclient.md)
 
-Defined in: [src/client.ts:665](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L665)
+Defined in: [src/client.ts:665](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L665)
 
 ___
 
@@ -984,7 +984,7 @@ Opens Voice Settings Modal in app
 
 **Returns:** [*RPClient*](rpclient.md)
 
-Defined in: [src/client.ts:683](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L683)
+Defined in: [src/client.ts:683](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L683)
 
 ___
 
@@ -1035,7 +1035,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:144](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L144)
+Defined in: [src/client.ts:144](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L144)
 
 ___
 
@@ -1051,7 +1051,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:81](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L81)
+Defined in: [src/client.ts:81](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L81)
 
 ___
 
@@ -1118,7 +1118,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)[]\>
 
-Defined in: [src/client.ts:887](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L887)
+Defined in: [src/client.ts:887](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L887)
 
 ___
 
@@ -1137,7 +1137,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:467](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L467)
+Defined in: [src/client.ts:467](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L467)
 
 ___
 
@@ -1157,7 +1157,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:438](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L438)
+Defined in: [src/client.ts:438](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L438)
 
 ___
 
@@ -1175,7 +1175,7 @@ Name | Type |
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:621](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L621)
+Defined in: [src/client.ts:621](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L621)
 
 ___
 
@@ -1193,7 +1193,7 @@ Name | Type |
 
 **Returns:** *Promise*<[*Presence*](presence.md)\>
 
-Defined in: [src/client.ts:299](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L299)
+Defined in: [src/client.ts:299](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L299)
 
 ___
 
@@ -1212,7 +1212,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:595](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L595)
+Defined in: [src/client.ts:595](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L595)
 
 ___
 
@@ -1248,7 +1248,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:838](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L838)
+Defined in: [src/client.ts:838](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L838)
 
 ___
 
@@ -1267,7 +1267,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*UserVoiceSettings*](../interfaces/uservoicesettings.md)\>
 
-Defined in: [src/client.ts:414](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L414)
+Defined in: [src/client.ts:414](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L414)
 
 ___
 
@@ -1286,7 +1286,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*VoiceSettings*](../interfaces/voicesettings.md)\>
 
-Defined in: [src/client.ts:533](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L533)
+Defined in: [src/client.ts:533](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L533)
 
 ___
 
@@ -1304,7 +1304,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*ShortcutKeyCombo*](../interfaces/shortcutkeycombo.md)[]\>
 
-Defined in: [src/client.ts:585](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L585)
+Defined in: [src/client.ts:585](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L585)
 
 ___
 
@@ -1322,7 +1322,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*ShortcutKeyCombo*](../interfaces/shortcutkeycombo.md)[]\>
 
-Defined in: [src/client.ts:590](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L590)
+Defined in: [src/client.ts:590](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L590)
 
 ___
 
@@ -1341,7 +1341,7 @@ Name | Type |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:170](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L170)
+Defined in: [src/client.ts:170](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L170)
 
 ___
 
@@ -1360,7 +1360,7 @@ Name | Type |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:190](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L190)
+Defined in: [src/client.ts:190](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L190)
 
 ___
 
@@ -1380,7 +1380,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:908](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L908)
+Defined in: [src/client.ts:908](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L908)
 
 ___
 
@@ -1400,7 +1400,7 @@ Name | Type | Default value |
 
 **Returns:** *Promise*<*any*[]\>
 
-Defined in: [src/client.ts:1061](https://github.com/DjDeveloperr/RPCord/blob/308e2e6/src/client.ts#L1061)
+Defined in: [src/client.ts:1061](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1061)
 
 ___
 
