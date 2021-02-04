@@ -77,6 +77,10 @@ rpc.connect().then(() => {
 });
 ```
 
+## Note
+
+For now, OAuth only works if you have at least one Redirect URI set in Developer Portal.
+
 ## Contributing
 
 You're always welcome to contribute!
