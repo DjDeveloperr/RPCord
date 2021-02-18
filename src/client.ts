@@ -9,12 +9,10 @@ import {
   Device,
   GetImageOptions,
   Guild,
-  Lobby,
-  LobbyOptions,
-  NetworkingConfig,
   OpCode,
   PartialChannel,
   PartialGuild,
+  Relationship,
   RPCEvent,
   ShortcutKeyCombo,
   User,
@@ -24,6 +22,31 @@ import {
 import fetch from "node-fetch";
 import { Presence } from "./presence";
 import { v4 } from "uuid";
+import { LobbyManager } from "./managers/lobby";
+import { AchievementManager } from "./managers/achievement";
+import { OverlayManager } from "./managers/overlay";
+import { NetworkingManager } from "./managers/networking";
+
+export const IGNORED_AUTO_EVENTS: string[] = [
+  "OVERLAY",
+  "OVERLAY_UPDATE",
+  "READY",
+  "ERROR",
+  "MESSAGE_CREATE",
+  "MESSAGE_DELETE",
+  "MESSAGE_UPDATE",
+  "NOTIFICATION_CREATE",
+  "CAPTURE_SHORTCUT_CHANGE",
+  "VOICE_CONNECTION_STATUS",
+  "VOICE_SETTINGS_UPDATE",
+  "VOICE_STATE_DELETE",
+  "VOICE_STATE_UPDATE",
+  "VOICE_STATE_CREATE",
+  "VOICE_CHANNEL_SELECT",
+  "CHANNEL_CREATE",
+  "GUILD_CREATE",
+  "GUILD_STATUS",
+];
 
 /** Client options to initialize. */
 export interface RPClientOptions {
@@ -64,6 +87,12 @@ export class RPClient extends EventEmitter {
   /** Whether Client is connected or not */
   connected: boolean = false;
 
+  lobbyManager: LobbyManager;
+  achievementManager: AchievementManager;
+  overlayManager: OverlayManager;
+  networkingManager: NetworkingManager;
+  private _subscribed: string[] = [];
+
   constructor(id: string, options?: RPClientOptions) {
     super();
     this.id = id;
@@ -76,6 +105,12 @@ export class RPClient extends EventEmitter {
     this.ipc.on("connect", () => (this.connected = true));
     this.ipc.on("close", () => (this.connected = false));
     this.ipc.on("packet", (packet: Packet) => this.processPacket(packet));
+
+    this.lobbyManager = new LobbyManager(this);
+    this.achievementManager = new AchievementManager(this);
+    this.overlayManager = new OverlayManager(this);
+    this.networkingManager = new NetworkingManager(this);
+    this.setMaxListeners(100);
   }
 
   private processPacket(packet: Packet) {
@@ -92,7 +127,7 @@ export class RPClient extends EventEmitter {
         const nonce = packet.data.nonce;
 
         if (packet.data.evt && packet.data.evt == "ERROR") {
-          this.emit("error", data);
+          this.emit("error", data, nonce);
         } else {
           const evt = cmd
             .split("_")
@@ -106,13 +141,14 @@ export class RPClient extends EventEmitter {
 
           switch (cmd) {
             case Command.Dispatch:
+              this.emit("dispatch", packet.data, nonce);
               this.processEvent(packet.data.evt, data);
               break;
 
             case Command.Authorize:
               this.authorized = true;
               this.authCode = data.code;
-              this.emit("authorize", data.code);
+              this.emit("authorize", data.code, nonce);
               this.fetchAccessToken();
               break;
 
@@ -122,7 +158,7 @@ export class RPClient extends EventEmitter {
               this.scopes = data.scopes;
               this.expires = data.expires;
               this.application = data.application;
-              this.emit("authenticate");
+              this.emit("authenticate", data, nonce);
               break;
 
             default:
@@ -141,14 +177,25 @@ export class RPClient extends EventEmitter {
     }
   }
 
-  private processEvent(evt: RPCEvent, data: any) {
+  private async processEvent(evt: RPCEvent, data: any) {
     this.emit("raw", evt, data);
 
     switch (evt) {
       case RPCEvent.Ready:
         this.user = data.user;
         this.config = data.config;
+        for (const e of Object.values(RPCEvent)) {
+          if (IGNORED_AUTO_EVENTS.includes(e)) continue;
+          try {
+            await this.subscribe(e);
+          } catch (e) {}
+        }
         this.emit("ready");
+        break;
+
+      case RPCEvent.CurrentUserUpdate:
+        this.user = data;
+        this.emit("currentUserUpdate", data);
         break;
 
       default:
@@ -168,10 +215,15 @@ export class RPClient extends EventEmitter {
 
   /** Subscribe for an RPC Event. */
   async subscribe(evt: RPCEvent, args?: any) {
+    if (this._subscribed.includes(evt) && typeof args !== "object") return this;
     const nonce = v4();
 
     const wait = this.waitFor("subscribe", (_, n) => n == nonce, 10000).then(
-      () => this
+      () => {
+        if (typeof args !== "object" && !this._subscribed.includes(evt))
+          this._subscribed.push(evt);
+        return this;
+      }
     );
 
     this.ipc.send(
@@ -191,7 +243,11 @@ export class RPClient extends EventEmitter {
     const nonce = v4();
 
     const wait = this.waitFor("unsubscribe", (_, n) => n == nonce, 10000).then(
-      () => this
+      () => {
+        if (typeof args !== "object" && this._subscribed.includes(evt))
+          this._subscribed = this._subscribed.filter((e) => e !== evt);
+        return this;
+      }
     );
 
     this.ipc.send(
@@ -642,14 +698,14 @@ export class RPClient extends EventEmitter {
   }
 
   /** Get array of Relationships (Presences) */
-  async getRelationships(timeout = 5000) {
+  async getRelationships(timeout = 5000): Promise<Relationship[]> {
     const nonce = v4();
 
     const wait = this.waitFor(
       "getRelationships",
       (_, n) => n == nonce,
       timeout
-    ).then((d) => d[0]);
+    ).then((d) => d[0].relationships);
 
     this.ipc.send(
       new Packet(OpCode.Frame, {
@@ -659,41 +715,6 @@ export class RPClient extends EventEmitter {
     );
 
     return wait;
-  }
-
-  /** Opens Guild Invite modal in app of given Invite Code */
-  openOverlayGuildInvite(code: string) {
-    const nonce = v4();
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.OpenOverlayGuildInvite,
-        args: {
-          code,
-          pid: process.pid,
-        },
-        nonce,
-      })
-    );
-
-    return this;
-  }
-
-  /** Opens Voice Settings Modal in app */
-  openOverlayVoiceSettings() {
-    const nonce = v4();
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.OpenOverlayVoiceSettings,
-        args: {
-          pid: process.pid,
-        },
-        nonce,
-      })
-    );
-
-    return this;
   }
 
   /** Returns an Array of SKUs */
@@ -734,311 +755,7 @@ export class RPClient extends EventEmitter {
     return wait;
   }
 
-  /** Gets the Networking Config */
-  async getNetworkingConfig(timeout: number = 5000): Promise<NetworkingConfig> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "getNetworkingConfig",
-      (_, n) => n === nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.GetNetworkingConfig,
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Gets the Networking System Metrics */
-  async networkingSystemMetrics(timeout: number = 5000): Promise<any | null> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "networkingSystemMetrics",
-      (_, n) => n === nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.NetworkingSystemMetrics,
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Gets the Networking Peer Metrics */
-  async networkingPeerMetrics(timeout: number = 5000): Promise<any | null> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "networkingPeerMetrics",
-      (_, n) => n === nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.NetworkingPeerMetrics,
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Creates and returns a new Networking Token */
-  async networkingCreateToken(timeout: number = 5000): Promise<string> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "networkingCreateToken",
-      (_, n) => n === nonce,
-      timeout
-    ).then((d) => d[0].token);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.NetworkingCreateToken,
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Returns an array of User's Achievements */
-  async getUserAchievements(timeout: number = 5000): Promise<any[]> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "getUserAchievements",
-      (_, n) => n === nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.GetUserAchievements,
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Sets User's Achievement progress (percent) by ID */
-  async setUserAchievement(
-    id: string,
-    percent: number,
-    timeout: number = 5000
-  ): Promise<RPClient> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "setUserAchievement",
-      (_, n) => n === nonce,
-      timeout
-    ).then(() => this);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.SetUserAchievement,
-        args: {
-          achievement_id: id,
-          percent_complete: percent,
-        },
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Create a new Lobby with given options */
-  async createLobby(options?: LobbyOptions, timeout = 5000): Promise<Lobby> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "createLobby",
-      (_, n) => n == nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.CreateLobby,
-        args: options ?? {},
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Search for lobbies */
-  async searchLobbies(timeout = 5000): Promise<Lobby[]> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "searchLobbies",
-      (_, n) => n == nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.SearchLobbies,
-        args: {},
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Update a Lobby with given options */
-  async updateLobby(
-    id: string,
-    options: LobbyOptions,
-    timeout = 5000
-  ): Promise<RPClient> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "updateLobby",
-      (_, n) => n == nonce,
-      timeout
-    ).then(() => this);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.UpdateLobby,
-        args: Object.assign({ id }, options || {}),
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Delete a Lobby */
-  async deleteLobby(id: string, timeout = 5000): Promise<RPClient> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "deleteLobby",
-      (_, n) => n == nonce,
-      timeout
-    ).then(() => this);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.DeleteLobby,
-        args: { id },
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Connect to a Lobby */
-  async connectToLobby(
-    id: string,
-    secret: string,
-    timeout = 5000
-  ): Promise<Lobby> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "connectToLobby",
-      (_, n) => n == nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.ConnectToLobby,
-        args: { id, secret },
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Disconnect from a Lobby */
-  async disconnectFromLobby(id: string, timeout = 5000): Promise<Lobby> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "disconnectFromLobby",
-      (_, n) => n == nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.DisconnectFromLobby,
-        args: { id },
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Disconnect from a Lobby Voice */
-  async disconnectFromLobbyVoice(id: string, timeout = 5000): Promise<Lobby> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "disconnectFromLobbyVoice",
-      (_, n) => n == nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.DisconnectFromLobbyVoice,
-        args: { id },
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Connect to a Lobby Voice */
-  async connectToLobbyVoice(id: string, timeout = 5000): Promise<Lobby> {
-    const nonce = v4();
-
-    const wait = this.waitFor(
-      "connectToLobbyVoice",
-      (_, n) => n == nonce,
-      timeout
-    ).then((d) => d[0]);
-
-    this.ipc.send(
-      new Packet(OpCode.Frame, {
-        cmd: Command.ConnectToLobbyVoice,
-        args: { id },
-        nonce,
-      })
-    );
-
-    return wait;
-  }
-
-  /** Gets an Image's Data (base64 URI). Supports only type: "1" ATM which is User Avatar */
+  /** Gets an Image's Data (base64 URI). Supports only type: "user" ATM which is User Avatar */
   async getImage(options: GetImageOptions, timeout = 5000): Promise<string> {
     const nonce = v4();
 
@@ -1068,16 +785,27 @@ export class RPClient extends EventEmitter {
       if (timeout !== undefined) {
         timeoutID = setTimeout(() => {
           this.off(event, eventFunc);
-          reject(new Error("Timed out"));
+          this.off("error", errorFunc);
+          reject(new Error("Timed out: " + event));
         }, timeout);
       }
       const eventFunc = (...args: any[]): void => {
         if (checkFunction(...args)) {
-          resolve(args);
           this.off(event, eventFunc);
+          this.off("error", errorFunc);
           if (timeoutID !== undefined) clearTimeout(timeoutID);
+          resolve(args);
         }
       };
+      const errorFunc = (...args: any[]): void => {
+        if (checkFunction(...args)) {
+          this.off(event, eventFunc);
+          this.off("error", errorFunc);
+          if (timeoutID !== undefined) clearTimeout(timeoutID);
+          reject(args[0]);
+        }
+      };
+      this.on("error", errorFunc);
       this.on(event, eventFunc);
     });
   }

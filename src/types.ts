@@ -1,3 +1,5 @@
+import type { ActivityPayload } from "./presence";
+
 /** Op Codes sent by IPC Messages. */
 export enum OpCode {
   Handshake,
@@ -326,4 +328,15 @@ export interface NetworkingConfig {
   address: string;
   /** Not the token you think of, lol. */
   token: string;
+}
+
+export interface PresencePayload {
+  status: "online" | "offline" | "dnd" | "invisible" | "idle";
+  activities?: ActivityPayload[];
+}
+
+export interface Relationship {
+  type: number;
+  user: User;
+  presence: PresencePayload;
 }
