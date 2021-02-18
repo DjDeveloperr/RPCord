@@ -4,10 +4,6 @@
 
 Partial User object
 
-## Hierarchy
-
-* **User**
-
 ## Table of contents
 
 ### Properties
@@ -26,7 +22,7 @@ Partial User object
 
 • **avatar**: *string*
 
-Defined in: [src/types.ts:132](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L132)
+Defined in: [src/types.ts:134](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L134)
 
 ___
 
@@ -34,7 +30,7 @@ ___
 
 • **bot**: *boolean*
 
-Defined in: [src/types.ts:133](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L133)
+Defined in: [src/types.ts:135](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L135)
 
 ___
 
@@ -42,7 +38,7 @@ ___
 
 • **discriminator**: *string*
 
-Defined in: [src/types.ts:131](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L131)
+Defined in: [src/types.ts:133](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L133)
 
 ___
 
@@ -50,7 +46,7 @@ ___
 
 • **flags**: *number*
 
-Defined in: [src/types.ts:134](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L134)
+Defined in: [src/types.ts:136](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L136)
 
 ___
 
@@ -58,7 +54,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:129](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L129)
+Defined in: [src/types.ts:131](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L131)
 
 ___
 
@@ -66,7 +62,7 @@ ___
 
 • **premium\_type**: [*PremiumType*](../enums/premiumtype.md)
 
-Defined in: [src/types.ts:135](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L135)
+Defined in: [src/types.ts:137](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L137)
 
 ___
 
@@ -74,4 +70,4 @@ ___
 
 • **username**: *string*
 
-Defined in: [src/types.ts:130](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L130)
+Defined in: [src/types.ts:132](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L132)

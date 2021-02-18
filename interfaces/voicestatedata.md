@@ -2,10 +2,6 @@
 
 # Interface: VoiceStateData
 
-## Hierarchy
-
-* **VoiceStateData**
-
 ## Table of contents
 
 ### Properties
@@ -22,7 +18,7 @@
 
 • **deaf**: *boolean*
 
-Defined in: [src/types.ts:237](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L237)
+Defined in: [src/types.ts:239](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L239)
 
 ___
 
@@ -30,7 +26,7 @@ ___
 
 • **mute**: *boolean*
 
-Defined in: [src/types.ts:236](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L236)
+Defined in: [src/types.ts:238](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L238)
 
 ___
 
@@ -38,7 +34,7 @@ ___
 
 • **self\_deaf**: *boolean*
 
-Defined in: [src/types.ts:239](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L239)
+Defined in: [src/types.ts:241](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L241)
 
 ___
 
@@ -46,7 +42,7 @@ ___
 
 • **self\_mute**: *boolean*
 
-Defined in: [src/types.ts:238](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L238)
+Defined in: [src/types.ts:240](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L240)
 
 ___
 
@@ -54,4 +50,4 @@ ___
 
 • **suppress**: *boolean*
 
-Defined in: [src/types.ts:240](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L240)
+Defined in: [src/types.ts:242](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L242)

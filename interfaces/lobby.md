@@ -2,10 +2,6 @@
 
 # Interface: Lobby
 
-## Hierarchy
-
-* **Lobby**
-
 ## Table of contents
 
 ### Properties
@@ -28,7 +24,7 @@
 
 • **application\_id**: *string*
 
-Defined in: [src/types.ts:312](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L312)
+Defined in: [src/types.ts:314](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L314)
 
 ___
 
@@ -36,7 +32,7 @@ ___
 
 • **capacity**: *number*
 
-Defined in: [src/types.ts:313](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L313)
+Defined in: [src/types.ts:315](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L315)
 
 ___
 
@@ -44,7 +40,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:314](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L314)
+Defined in: [src/types.ts:316](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L316)
 
 ___
 
@@ -52,7 +48,7 @@ ___
 
 • **locked**: *boolean*
 
-Defined in: [src/types.ts:315](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L315)
+Defined in: [src/types.ts:317](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L317)
 
 ___
 
@@ -60,7 +56,7 @@ ___
 
 • **members**: { `metadata`: [*LobbyMetadata*](lobbymetadata.md) ; `user`: [*User*](user.md)  }[]
 
-Defined in: [src/types.ts:316](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L316)
+Defined in: [src/types.ts:318](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L318)
 
 ___
 
@@ -68,7 +64,7 @@ ___
 
 • **metadata**: [*LobbyMetadata*](lobbymetadata.md)
 
-Defined in: [src/types.ts:317](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L317)
+Defined in: [src/types.ts:319](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L319)
 
 ___
 
@@ -76,7 +72,7 @@ ___
 
 • **owner\_id**: *string*
 
-Defined in: [src/types.ts:318](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L318)
+Defined in: [src/types.ts:320](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L320)
 
 ___
 
@@ -84,7 +80,7 @@ ___
 
 • **region**: *string*
 
-Defined in: [src/types.ts:319](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L319)
+Defined in: [src/types.ts:321](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L321)
 
 ___
 
@@ -92,7 +88,7 @@ ___
 
 • **secret**: *string*
 
-Defined in: [src/types.ts:320](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L320)
+Defined in: [src/types.ts:322](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L322)
 
 ___
 
@@ -100,7 +96,7 @@ ___
 
 • **type**: [*LobbyType*](../enums/lobbytype.md)
 
-Defined in: [src/types.ts:321](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L321)
+Defined in: [src/types.ts:323](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L323)
 
 ___
 
@@ -108,4 +104,4 @@ ___
 
 • **voice\_states**: [*VoiceState*](voicestate.md)[]
 
-Defined in: [src/types.ts:322](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L322)
+Defined in: [src/types.ts:324](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L324)

@@ -2,10 +2,6 @@
 
 # Interface: Message
 
-## Hierarchy
-
-* **Message**
-
 ## Indexable
 
 ▪ [name: *string*]: *any*
@@ -22,4 +18,4 @@
 
 • **id**: *string*
 
-Defined in: [src/types.ts:253](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L253)
+Defined in: [src/types.ts:255](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L255)

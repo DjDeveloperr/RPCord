@@ -2,10 +2,6 @@
 
 # Interface: LobbyMetadata
 
-## Hierarchy
-
-* **LobbyMetadata**
-
 ## Indexable
 
 ▪ [name: *string*]: *string* \| *number*

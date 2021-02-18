@@ -2,10 +2,6 @@
 
 # Interface: ChannelPayload
 
-## Hierarchy
-
-* **ChannelPayload**
-
 ## Table of contents
 
 ### Properties
@@ -27,7 +23,7 @@
 
 • `Optional` **bitrate**: *undefined* \| *number*
 
-Defined in: [src/types.ts:262](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L262)
+Defined in: [src/types.ts:264](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L264)
 
 ___
 
@@ -35,7 +31,7 @@ ___
 
 • **guild\_id**: *string*
 
-Defined in: [src/types.ts:264](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L264)
+Defined in: [src/types.ts:266](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L266)
 
 ___
 
@@ -43,7 +39,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:258](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L258)
+Defined in: [src/types.ts:260](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L260)
 
 ___
 
@@ -51,7 +47,7 @@ ___
 
 • `Optional` **messages**: *undefined* \| [*Message*](message.md)[]
 
-Defined in: [src/types.ts:267](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L267)
+Defined in: [src/types.ts:269](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L269)
 
 ___
 
@@ -59,7 +55,7 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:259](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L259)
+Defined in: [src/types.ts:261](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L261)
 
 ___
 
@@ -67,7 +63,7 @@ ___
 
 • **position**: *number*
 
-Defined in: [src/types.ts:265](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L265)
+Defined in: [src/types.ts:267](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L267)
 
 ___
 
@@ -75,7 +71,7 @@ ___
 
 • `Optional` **topic**: *undefined* \| *string*
 
-Defined in: [src/types.ts:261](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L261)
+Defined in: [src/types.ts:263](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L263)
 
 ___
 
@@ -83,7 +79,7 @@ ___
 
 • **type**: *number*
 
-Defined in: [src/types.ts:260](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L260)
+Defined in: [src/types.ts:262](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L262)
 
 ___
 
@@ -91,7 +87,7 @@ ___
 
 • `Optional` **user\_limit**: *undefined* \| *number*
 
-Defined in: [src/types.ts:263](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L263)
+Defined in: [src/types.ts:265](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L265)
 
 ___
 
@@ -99,4 +95,4 @@ ___
 
 • `Optional` **voice\_states**: *undefined* \| [*VoiceState*](voicestate.md)[]
 
-Defined in: [src/types.ts:266](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L266)
+Defined in: [src/types.ts:268](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L268)

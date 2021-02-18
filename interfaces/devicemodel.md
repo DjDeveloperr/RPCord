@@ -2,10 +2,6 @@
 
 # Interface: DeviceModel
 
-## Hierarchy
-
-* **DeviceModel**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • **name**: *string*
 
-Defined in: [src/types.ts:213](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L213)
+Defined in: [src/types.ts:215](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L215)
 
 ___
 
@@ -27,4 +23,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/types.ts:214](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L214)
+Defined in: [src/types.ts:216](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L216)

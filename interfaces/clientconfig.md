@@ -4,10 +4,6 @@
 
 Client Config sent on Ready event.
 
-## Hierarchy
-
-* **ClientConfig**
-
 ## Table of contents
 
 ### Properties
@@ -22,7 +18,7 @@ Client Config sent on Ready event.
 
 • **api\_endpoint**: *string*
 
-Defined in: [src/types.ts:141](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L141)
+Defined in: [src/types.ts:143](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L143)
 
 ___
 
@@ -30,7 +26,7 @@ ___
 
 • **cdn\_host**: *string*
 
-Defined in: [src/types.ts:140](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L140)
+Defined in: [src/types.ts:142](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L142)
 
 ___
 
@@ -38,4 +34,4 @@ ___
 
 • **environment**: *string*
 
-Defined in: [src/types.ts:142](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L142)
+Defined in: [src/types.ts:144](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L144)

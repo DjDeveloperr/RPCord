@@ -2,10 +2,6 @@
 
 # Class: Packet
 
-## Hierarchy
-
-* **Packet**
-
 ## Table of contents
 
 ### Constructors
@@ -32,13 +28,13 @@
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `op` | [*OpCode*](../enums/opcode.md) |
 `data?` | *any* |
 
 **Returns:** [*Packet*](packet.md)
 
-Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/packet.ts#L5)
+Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/packet.ts#L5)
 
 ## Properties
 
@@ -46,7 +42,7 @@ Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/e54173
 
 • **data**: *any*
 
-Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/packet.ts#L5)
+Defined in: [src/packet.ts:5](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/packet.ts#L5)
 
 ___
 
@@ -54,7 +50,7 @@ ___
 
 • **op**: [*OpCode*](../enums/opcode.md)
 
-Defined in: [src/packet.ts:4](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/packet.ts#L4)
+Defined in: [src/packet.ts:4](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/packet.ts#L4)
 
 ## Methods
 
@@ -64,7 +60,7 @@ Defined in: [src/packet.ts:4](https://github.com/DjDeveloperr/RPCord/blob/e54173
 
 **Returns:** *Buffer*
 
-Defined in: [src/packet.ts:12](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/packet.ts#L12)
+Defined in: [src/packet.ts:12](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/packet.ts#L12)
 
 ___
 
@@ -75,12 +71,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `data` | *string* \| *Uint8Array* \| *Buffer* |
 
 **Returns:** [*Packet*](packet.md)
 
-Defined in: [src/packet.ts:25](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/packet.ts#L25)
+Defined in: [src/packet.ts:25](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/packet.ts#L25)
 
 ___
 
@@ -91,9 +87,9 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `data` | *string* \| *Uint8Array* \| *Buffer* |
 
 **Returns:** *undefined* \| [*Packet*](packet.md)
 
-Defined in: [src/packet.ts:39](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/packet.ts#L39)
+Defined in: [src/packet.ts:39](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/packet.ts#L39)

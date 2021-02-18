@@ -2,10 +2,6 @@
 
 # Interface: UserVoiceSettingsPan
 
-## Hierarchy
-
-* **UserVoiceSettingsPan**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • **left**: *number*
 
-Defined in: [src/types.ts:146](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L146)
+Defined in: [src/types.ts:148](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L148)
 
 ___
 
@@ -27,4 +23,4 @@ ___
 
 • **right**: *number*
 
-Defined in: [src/types.ts:147](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L147)
+Defined in: [src/types.ts:149](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L149)

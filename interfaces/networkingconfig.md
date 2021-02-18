@@ -2,10 +2,6 @@
 
 # Interface: NetworkingConfig
 
-## Hierarchy
-
-* **NetworkingConfig**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • **address**: *string*
 
-Defined in: [src/types.ts:326](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L326)
+Defined in: [src/types.ts:328](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L328)
 
 ___
 
@@ -29,4 +25,4 @@ ___
 
 Not the token you think of, lol.
 
-Defined in: [src/types.ts:328](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L328)
+Defined in: [src/types.ts:330](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L330)

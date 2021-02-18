@@ -2,10 +2,6 @@
 
 # Interface: DeviceVendor
 
-## Hierarchy
-
-* **DeviceVendor**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • **name**: *string*
 
-Defined in: [src/types.ts:208](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L208)
+Defined in: [src/types.ts:210](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L210)
 
 ___
 
@@ -27,4 +23,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/types.ts:209](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L209)
+Defined in: [src/types.ts:211](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L211)

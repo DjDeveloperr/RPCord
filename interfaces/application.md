@@ -2,10 +2,6 @@
 
 # Interface: Application
 
-## Hierarchy
-
-* **Application**
-
 ## Table of contents
 
 ### Properties
@@ -22,7 +18,7 @@
 
 • **description**: *string*
 
-Defined in: [src/types.ts:159](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L159)
+Defined in: [src/types.ts:161](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L161)
 
 ___
 
@@ -30,7 +26,7 @@ ___
 
 • **icon**: *string*
 
-Defined in: [src/types.ts:160](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L160)
+Defined in: [src/types.ts:162](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L162)
 
 ___
 
@@ -38,7 +34,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:158](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L158)
+Defined in: [src/types.ts:160](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L160)
 
 ___
 
@@ -46,7 +42,7 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:162](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L162)
+Defined in: [src/types.ts:164](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L164)
 
 ___
 
@@ -54,4 +50,4 @@ ___
 
 • **rpc\_origins**: *string*[]
 
-Defined in: [src/types.ts:161](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L161)
+Defined in: [src/types.ts:163](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L163)

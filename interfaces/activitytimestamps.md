@@ -2,10 +2,6 @@
 
 # Interface: ActivityTimestamps
 
-## Hierarchy
-
-* **ActivityTimestamps**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • `Optional` **end**: *undefined* \| *number*
 
-Defined in: [src/presence.ts:11](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L11)
+Defined in: [src/presence.ts:11](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L11)
 
 ___
 
@@ -27,4 +23,4 @@ ___
 
 • `Optional` **start**: *undefined* \| *number*
 
-Defined in: [src/presence.ts:10](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L10)
+Defined in: [src/presence.ts:10](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L10)

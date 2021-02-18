@@ -2,10 +2,6 @@
 
 # Interface: ActivityButton
 
-## Hierarchy
-
-* **ActivityButton**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • **label**: *string*
 
-Defined in: [src/presence.ts:42](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L42)
+Defined in: [src/presence.ts:42](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L42)
 
 ___
 
@@ -27,4 +23,4 @@ ___
 
 • **url**: *string*
 
-Defined in: [src/presence.ts:43](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L43)
+Defined in: [src/presence.ts:43](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L43)

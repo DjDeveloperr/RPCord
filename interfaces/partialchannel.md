@@ -2,10 +2,6 @@
 
 # Interface: PartialChannel
 
-## Hierarchy
-
-* **PartialChannel**
-
 ## Table of contents
 
 ### Properties
@@ -20,7 +16,7 @@
 
 • **id**: *string*
 
-Defined in: [src/types.ts:271](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L271)
+Defined in: [src/types.ts:273](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L273)
 
 ___
 
@@ -28,7 +24,7 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:272](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L272)
+Defined in: [src/types.ts:274](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L274)
 
 ___
 
@@ -36,4 +32,4 @@ ___
 
 • **type**: *number*
 
-Defined in: [src/types.ts:273](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L273)
+Defined in: [src/types.ts:275](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L275)

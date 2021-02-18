@@ -18,7 +18,9 @@ High-level wrapper over Discord IPC.
 
 ### Properties
 
+- [\_subscribed](rpclient.md#_subscribed)
 - [accessToken](rpclient.md#accesstoken)
+- [achievementManager](rpclient.md#achievementmanager)
 - [application](rpclient.md#application)
 - [authCode](rpclient.md#authcode)
 - [authenticated](rpclient.md#authenticated)
@@ -28,6 +30,9 @@ High-level wrapper over Discord IPC.
 - [expires](rpclient.md#expires)
 - [id](rpclient.md#id)
 - [ipc](rpclient.md#ipc)
+- [lobbyManager](rpclient.md#lobbymanager)
+- [networkingManager](rpclient.md#networkingmanager)
+- [overlayManager](rpclient.md#overlaymanager)
 - [scopes](rpclient.md#scopes)
 - [secret](rpclient.md#secret)
 - [user](rpclient.md#user)
@@ -46,13 +51,7 @@ High-level wrapper over Discord IPC.
 - [captureShortcut](rpclient.md#captureshortcut)
 - [closeActivityRequest](rpclient.md#closeactivityrequest)
 - [connect](rpclient.md#connect)
-- [connectToLobby](rpclient.md#connecttolobby)
-- [connectToLobbyVoice](rpclient.md#connecttolobbyvoice)
-- [createLobby](rpclient.md#createlobby)
-- [deleteLobby](rpclient.md#deletelobby)
 - [disconnect](rpclient.md#disconnect)
-- [disconnectFromLobby](rpclient.md#disconnectfromlobby)
-- [disconnectFromLobbyVoice](rpclient.md#disconnectfromlobbyvoice)
 - [emit](rpclient.md#emit)
 - [eventNames](rpclient.md#eventnames)
 - [fetchAccessToken](rpclient.md#fetchaccesstoken)
@@ -63,22 +62,15 @@ High-level wrapper over Discord IPC.
 - [getGuilds](rpclient.md#getguilds)
 - [getImage](rpclient.md#getimage)
 - [getMaxListeners](rpclient.md#getmaxlisteners)
-- [getNetworkingConfig](rpclient.md#getnetworkingconfig)
 - [getRelationships](rpclient.md#getrelationships)
 - [getSelectedVoiceChannel](rpclient.md#getselectedvoicechannel)
 - [getSkus](rpclient.md#getskus)
-- [getUserAchievements](rpclient.md#getuserachievements)
 - [getVoiceSettings](rpclient.md#getvoicesettings)
 - [listenerCount](rpclient.md#listenercount)
 - [listeners](rpclient.md#listeners)
-- [networkingCreateToken](rpclient.md#networkingcreatetoken)
-- [networkingPeerMetrics](rpclient.md#networkingpeermetrics)
-- [networkingSystemMetrics](rpclient.md#networkingsystemmetrics)
 - [off](rpclient.md#off)
 - [on](rpclient.md#on)
 - [once](rpclient.md#once)
-- [openOverlayGuildInvite](rpclient.md#openoverlayguildinvite)
-- [openOverlayVoiceSettings](rpclient.md#openoverlayvoicesettings)
 - [prependListener](rpclient.md#prependlistener)
 - [prependOnceListener](rpclient.md#prependoncelistener)
 - [processEvent](rpclient.md#processevent)
@@ -86,21 +78,18 @@ High-level wrapper over Discord IPC.
 - [rawListeners](rpclient.md#rawlisteners)
 - [removeAllListeners](rpclient.md#removealllisteners)
 - [removeListener](rpclient.md#removelistener)
-- [searchLobbies](rpclient.md#searchlobbies)
 - [selectTextChannel](rpclient.md#selecttextchannel)
 - [selectVoiceChannel](rpclient.md#selectvoicechannel)
 - [sendActivityJoinInvite](rpclient.md#sendactivityjoininvite)
 - [setActivity](rpclient.md#setactivity)
 - [setCertifiedDevices](rpclient.md#setcertifieddevices)
 - [setMaxListeners](rpclient.md#setmaxlisteners)
-- [setUserAchievement](rpclient.md#setuserachievement)
 - [setUserVoiceSettings](rpclient.md#setuservoicesettings)
 - [setVoiceSettings](rpclient.md#setvoicesettings)
 - [startCaptureShortcut](rpclient.md#startcaptureshortcut)
 - [stopCaptureShortcut](rpclient.md#stopcaptureshortcut)
 - [subscribe](rpclient.md#subscribe)
 - [unsubscribe](rpclient.md#unsubscribe)
-- [updateLobby](rpclient.md#updatelobby)
 - [waitFor](rpclient.md#waitfor)
 - [listenerCount](rpclient.md#listenercount)
 - [on](rpclient.md#on)
@@ -115,15 +104,23 @@ High-level wrapper over Discord IPC.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `id` | *string* |
 `options?` | [*RPClientOptions*](../interfaces/rpclientoptions.md) |
 
 **Returns:** [*RPClient*](rpclient.md)
 
-Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L65)
+Defined in: [src/client.ts:94](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L94)
 
 ## Properties
+
+### \_subscribed
+
+• `Private` **\_subscribed**: *string*[]
+
+Defined in: [src/client.ts:94](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L94)
+
+___
 
 ### accessToken
 
@@ -131,7 +128,15 @@ Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e5417
 
 Access Token saved from `authenticate`
 
-Defined in: [src/client.ts:49](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L49)
+Defined in: [src/client.ts:72](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L72)
+
+___
+
+### achievementManager
+
+• **achievementManager**: *AchievementManager*
+
+Defined in: [src/client.ts:91](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L91)
 
 ___
 
@@ -141,7 +146,7 @@ ___
 
 Application object of the Client
 
-Defined in: [src/client.ts:63](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L63)
+Defined in: [src/client.ts:86](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L86)
 
 ___
 
@@ -151,7 +156,7 @@ ___
 
 Auth Code saved from `authorize`
 
-Defined in: [src/client.ts:47](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L47)
+Defined in: [src/client.ts:70](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L70)
 
 ___
 
@@ -161,7 +166,7 @@ ___
 
 Whether Client is Authenticated yet or not
 
-Defined in: [src/client.ts:45](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L45)
+Defined in: [src/client.ts:68](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L68)
 
 ___
 
@@ -171,7 +176,7 @@ ___
 
 Whether Client is Authorized yet or not
 
-Defined in: [src/client.ts:43](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L43)
+Defined in: [src/client.ts:66](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L66)
 
 ___
 
@@ -181,7 +186,7 @@ ___
 
 RPC Client Config (Discord)
 
-Defined in: [src/client.ts:57](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L57)
+Defined in: [src/client.ts:80](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L80)
 
 ___
 
@@ -191,7 +196,7 @@ ___
 
 Whether Client is connected or not
 
-Defined in: [src/client.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L65)
+Defined in: [src/client.ts:88](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L88)
 
 ___
 
@@ -201,7 +206,7 @@ ___
 
 Expiration of Access Token
 
-Defined in: [src/client.ts:61](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L61)
+Defined in: [src/client.ts:84](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L84)
 
 ___
 
@@ -211,7 +216,7 @@ ___
 
 Client ID
 
-Defined in: [src/client.ts:37](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L37)
+Defined in: [src/client.ts:60](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L60)
 
 ___
 
@@ -221,7 +226,31 @@ ___
 
 Internal IPC
 
-Defined in: [src/client.ts:41](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L41)
+Defined in: [src/client.ts:64](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L64)
+
+___
+
+### lobbyManager
+
+• **lobbyManager**: *LobbyManager*
+
+Defined in: [src/client.ts:90](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L90)
+
+___
+
+### networkingManager
+
+• **networkingManager**: *NetworkingManager*
+
+Defined in: [src/client.ts:93](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L93)
+
+___
+
+### overlayManager
+
+• **overlayManager**: *OverlayManager*
+
+Defined in: [src/client.ts:92](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L92)
 
 ___
 
@@ -231,7 +260,7 @@ ___
 
 Scopes to use for Authorization
 
-Defined in: [src/client.ts:51](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L51)
+Defined in: [src/client.ts:74](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L74)
 
 ___
 
@@ -241,7 +270,7 @@ ___
 
 Client Secret (for fetching Access Token from Auth Code)
 
-Defined in: [src/client.ts:53](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L53)
+Defined in: [src/client.ts:76](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L76)
 
 ___
 
@@ -251,7 +280,7 @@ ___
 
 Underlying User account of the Discord Client
 
-Defined in: [src/client.ts:55](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L55)
+Defined in: [src/client.ts:78](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L78)
 
 ___
 
@@ -261,7 +290,7 @@ ___
 
 User's cached Voice Settings
 
-Defined in: [src/client.ts:59](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L59)
+Defined in: [src/client.ts:82](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L82)
 
 ___
 
@@ -271,7 +300,7 @@ ___
 
 Discord RPC Version
 
-Defined in: [src/client.ts:39](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L39)
+Defined in: [src/client.ts:62](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L62)
 
 ___
 
@@ -324,7 +353,7 @@ Defined in: node_modules/@types/node/events.d.ts:37
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -343,12 +372,12 @@ Authenticate using an existing Access Token
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `token?` | *string* |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:252](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L252)
+Defined in: [src/client.ts:308](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L308)
 
 ___
 
@@ -361,12 +390,12 @@ Authorize for given scopes (or scopes in Client Options).
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `scopes?` | *string*[] |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:226](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L226)
+Defined in: [src/client.ts:282](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L282)
 
 ___
 
@@ -379,13 +408,13 @@ START or STOP capturing shortcut
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `action` | *START* \| *STOP* | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*ShortcutKeyCombo*](../interfaces/shortcutkeycombo.md)[]\>
 
-Defined in: [src/client.ts:557](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L557)
+Defined in: [src/client.ts:613](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L613)
 
 ___
 
@@ -398,12 +427,12 @@ Close (decline) an Activity Join Request
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `id` | *string* |
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:633](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L633)
+Defined in: [src/client.ts:689](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L689)
 
 ___
 
@@ -415,84 +444,7 @@ Connect to Discord IPC.
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:210](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L210)
-
-___
-
-### connectToLobby
-
-▸ **connectToLobby**(`id`: *string*, `secret`: *string*, `timeout?`: *number*): *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Connect to a Lobby
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`id` | *string* | - |
-`secret` | *string* | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Defined in: [src/client.ts:954](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L954)
-
-___
-
-### connectToLobbyVoice
-
-▸ **connectToLobbyVoice**(`id`: *string*, `timeout?`: *number*): *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Connect to a Lobby Voice
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`id` | *string* | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Defined in: [src/client.ts:1021](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1021)
-
-___
-
-### createLobby
-
-▸ **createLobby**(`options?`: [*LobbyOptions*](../interfaces/lobbyoptions.md), `timeout?`: *number*): *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Create a new Lobby with given options
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`options?` | [*LobbyOptions*](../interfaces/lobbyoptions.md) | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Defined in: [src/client.ts:866](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L866)
-
-___
-
-### deleteLobby
-
-▸ **deleteLobby**(`id`: *string*, `timeout?`: *number*): *Promise*<[*RPClient*](rpclient.md)\>
-
-Delete a Lobby
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`id` | *string* | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*RPClient*](rpclient.md)\>
-
-Defined in: [src/client.ts:933](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L933)
+Defined in: [src/client.ts:266](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L266)
 
 ___
 
@@ -504,45 +456,7 @@ Disconnect from Discord IPC
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:1086](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1086)
-
-___
-
-### disconnectFromLobby
-
-▸ **disconnectFromLobby**(`id`: *string*, `timeout?`: *number*): *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Disconnect from a Lobby
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`id` | *string* | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Defined in: [src/client.ts:979](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L979)
-
-___
-
-### disconnectFromLobbyVoice
-
-▸ **disconnectFromLobbyVoice**(`id`: *string*, `timeout?`: *number*): *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Disconnect from a Lobby Voice
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`id` | *string* | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)\>
-
-Defined in: [src/client.ts:1000](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1000)
+Defined in: [src/client.ts:814](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L814)
 
 ___
 
@@ -553,7 +467,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `...args` | *any*[] |
 
@@ -575,19 +489,19 @@ ___
 
 ### fetchAccessToken
 
-▸ `Private`**fetchAccessToken**(`code?`: *string*): *Promise*<*undefined* \| *string*\>
+▸ `Private`**fetchAccessToken**(`code?`: *string*): *Promise*<undefined \| string\>
 
 Fetches Access Token from given Auth Code
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `code?` | *string* |
 
-**Returns:** *Promise*<*undefined* \| *string*\>
+**Returns:** *Promise*<undefined \| string\>
 
-Defined in: [src/client.ts:273](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L273)
+Defined in: [src/client.ts:329](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L329)
 
 ___
 
@@ -600,13 +514,13 @@ Get a Channel by ID
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `id` | *string* | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:362](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L362)
+Defined in: [src/client.ts:418](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L418)
 
 ___
 
@@ -619,31 +533,31 @@ Get all Channels or channels of a specific Guild
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `guild?` | *string* | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*PartialChannel*](../interfaces/partialchannel.md)[]\>
 
-Defined in: [src/client.ts:388](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L388)
+Defined in: [src/client.ts:444](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L444)
 
 ___
 
 ### getEntitlements
 
-▸ **getEntitlements**(`timeout?`: *number*): *Promise*<*any*[]\>
+▸ **getEntitlements**(`timeout?`: *number*): *Promise*<any[]\>
 
 Returns an Array of Entitlements
 
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
-**Returns:** *Promise*<*any*[]\>
+**Returns:** *Promise*<any[]\>
 
-Defined in: [src/client.ts:718](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L718)
+Defined in: [src/client.ts:739](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L739)
 
 ___
 
@@ -656,13 +570,13 @@ Get a Guild by ID
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `id` | *string* | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*Guild*](../interfaces/guild.md)\>
 
-Defined in: [src/client.ts:321](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L321)
+Defined in: [src/client.ts:377](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L377)
 
 ___
 
@@ -675,31 +589,31 @@ Get all Guilds of the User
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*PartialGuild*](../interfaces/partialguild.md)[]\>
 
-Defined in: [src/client.ts:343](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L343)
+Defined in: [src/client.ts:399](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L399)
 
 ___
 
 ### getImage
 
-▸ **getImage**(`options`: [*GetImageOptions*](../interfaces/getimageoptions.md), `timeout?`: *number*): *Promise*<*string*\>
+▸ **getImage**(`options`: [*GetImageOptions*](../interfaces/getimageoptions.md), `timeout?`: *number*): *Promise*<string\>
 
-Gets an Image's Data (base64 URI). Supports only type: "1" ATM which is User Avatar
+Gets an Image's Data (base64 URI). Supports only type: "user" ATM which is User Avatar
 
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `options` | [*GetImageOptions*](../interfaces/getimageoptions.md) | - |
 `timeout` | *number* | 5000 |
 
-**Returns:** *Promise*<*string*\>
+**Returns:** *Promise*<string\>
 
-Defined in: [src/client.ts:1042](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1042)
+Defined in: [src/client.ts:759](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L759)
 
 ___
 
@@ -713,39 +627,21 @@ Defined in: node_modules/@types/node/events.d.ts:64
 
 ___
 
-### getNetworkingConfig
-
-▸ **getNetworkingConfig**(`timeout?`: *number*): *Promise*<[*NetworkingConfig*](../interfaces/networkingconfig.md)\>
-
-Gets the Networking Config
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*NetworkingConfig*](../interfaces/networkingconfig.md)\>
-
-Defined in: [src/client.ts:738](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L738)
-
-___
-
 ### getRelationships
 
-▸ **getRelationships**(`timeout?`: *number*): *Promise*<*any*\>
+▸ **getRelationships**(`timeout?`: *number*): *Promise*<[*Relationship*](../interfaces/relationship.md)[]\>
 
 Get array of Relationships (Presences)
 
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
-**Returns:** *Promise*<*any*\>
+**Returns:** *Promise*<[*Relationship*](../interfaces/relationship.md)[]\>
 
-Defined in: [src/client.ts:645](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L645)
+Defined in: [src/client.ts:701](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L701)
 
 ___
 
@@ -758,48 +654,30 @@ Get selected Voice Channel
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:491](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L491)
+Defined in: [src/client.ts:547](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L547)
 
 ___
 
 ### getSkus
 
-▸ **getSkus**(`timeout?`: *number*): *Promise*<*any*[]\>
+▸ **getSkus**(`timeout?`: *number*): *Promise*<any[]\>
 
 Returns an Array of SKUs
 
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
-**Returns:** *Promise*<*any*[]\>
+**Returns:** *Promise*<any[]\>
 
-Defined in: [src/client.ts:700](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L700)
-
-___
-
-### getUserAchievements
-
-▸ **getUserAchievements**(`timeout?`: *number*): *Promise*<*any*[]\>
-
-Returns an array of User's Achievements
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<*any*[]\>
-
-Defined in: [src/client.ts:818](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L818)
+Defined in: [src/client.ts:721](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L721)
 
 ___
 
@@ -812,12 +690,12 @@ Get Voice Settins of Client
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*VoiceSettings*](../interfaces/voicesettings.md)\>
 
-Defined in: [src/client.ts:512](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L512)
+Defined in: [src/client.ts:568](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L568)
 
 ___
 
@@ -828,7 +706,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** *number*
@@ -844,66 +722,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
 
 Defined in: node_modules/@types/node/events.d.ts:65
-
-___
-
-### networkingCreateToken
-
-▸ **networkingCreateToken**(`timeout?`: *number*): *Promise*<*string*\>
-
-Creates and returns a new Networking Token
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<*string*\>
-
-Defined in: [src/client.ts:798](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L798)
-
-___
-
-### networkingPeerMetrics
-
-▸ **networkingPeerMetrics**(`timeout?`: *number*): *Promise*<*any*\>
-
-Gets the Networking Peer Metrics
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<*any*\>
-
-Defined in: [src/client.ts:778](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L778)
-
-___
-
-### networkingSystemMetrics
-
-▸ **networkingSystemMetrics**(`timeout?`: *number*): *Promise*<*any*\>
-
-Gets the Networking System Metrics
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<*any*\>
-
-Defined in: [src/client.ts:758](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L758)
 
 ___
 
@@ -914,7 +738,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -931,7 +755,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -948,43 +772,13 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
 **Returns:** [*RPClient*](rpclient.md)
 
 Defined in: node_modules/@types/node/events.d.ts:59
-
-___
-
-### openOverlayGuildInvite
-
-▸ **openOverlayGuildInvite**(`code`: *string*): [*RPClient*](rpclient.md)
-
-Opens Guild Invite modal in app of given Invite Code
-
-#### Parameters:
-
-Name | Type |
------- | ------ |
-`code` | *string* |
-
-**Returns:** [*RPClient*](rpclient.md)
-
-Defined in: [src/client.ts:665](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L665)
-
-___
-
-### openOverlayVoiceSettings
-
-▸ **openOverlayVoiceSettings**(): [*RPClient*](rpclient.md)
-
-Opens Voice Settings Modal in app
-
-**Returns:** [*RPClient*](rpclient.md)
-
-Defined in: [src/client.ts:683](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L683)
 
 ___
 
@@ -995,7 +789,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -1012,7 +806,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -1024,18 +818,18 @@ ___
 
 ### processEvent
 
-▸ `Private`**processEvent**(`evt`: [*RPCEvent*](../enums/rpcevent.md), `data`: *any*): *void*
+▸ `Private`**processEvent**(`evt`: [*RPCEvent*](../enums/rpcevent.md), `data`: *any*): *Promise*<void\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `evt` | [*RPCEvent*](../enums/rpcevent.md) |
 `data` | *any* |
 
-**Returns:** *void*
+**Returns:** *Promise*<void\>
 
-Defined in: [src/client.ts:144](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L144)
+Defined in: [src/client.ts:180](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L180)
 
 ___
 
@@ -1046,12 +840,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `packet` | [*Packet*](packet.md) |
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:81](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L81)
+Defined in: [src/client.ts:116](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L116)
 
 ___
 
@@ -1062,7 +856,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -1078,7 +872,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event?` | *string* \| *symbol* |
 
 **Returns:** [*RPClient*](rpclient.md)
@@ -1094,31 +888,13 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
 **Returns:** [*RPClient*](rpclient.md)
 
 Defined in: node_modules/@types/node/events.d.ts:60
-
-___
-
-### searchLobbies
-
-▸ **searchLobbies**(`timeout?`: *number*): *Promise*<[*Lobby*](../interfaces/lobby.md)[]\>
-
-Search for lobbies
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*Lobby*](../interfaces/lobby.md)[]\>
-
-Defined in: [src/client.ts:887](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L887)
 
 ___
 
@@ -1131,13 +907,13 @@ Select a Text Channel by ID
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `id` | *string* | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:467](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L467)
+Defined in: [src/client.ts:523](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L523)
 
 ___
 
@@ -1150,14 +926,14 @@ Select a Voice Channel by ID
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `id` | *string* | - |
 `force?` | *boolean* | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*ChannelPayload*](../interfaces/channelpayload.md)\>
 
-Defined in: [src/client.ts:438](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L438)
+Defined in: [src/client.ts:494](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L494)
 
 ___
 
@@ -1170,12 +946,12 @@ Approve an Activity Join Request (by user ID)
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `id` | *string* |
 
 **Returns:** *void*
 
-Defined in: [src/client.ts:621](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L621)
+Defined in: [src/client.ts:677](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L677)
 
 ___
 
@@ -1188,12 +964,12 @@ Set User's Activity (Presence)
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `activity` | [*Presence*](presence.md) |
 
 **Returns:** *Promise*<[*Presence*](presence.md)\>
 
-Defined in: [src/client.ts:299](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L299)
+Defined in: [src/client.ts:355](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L355)
 
 ___
 
@@ -1206,13 +982,13 @@ Set Certified Devices (Audio/Video)
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `devices` | [*Device*](../interfaces/device.md)[] | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:595](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L595)
+Defined in: [src/client.ts:651](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L651)
 
 ___
 
@@ -1223,32 +999,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `n` | *number* |
 
 **Returns:** [*RPClient*](rpclient.md)
 
 Defined in: node_modules/@types/node/events.d.ts:63
-
-___
-
-### setUserAchievement
-
-▸ **setUserAchievement**(`id`: *string*, `percent`: *number*, `timeout?`: *number*): *Promise*<[*RPClient*](rpclient.md)\>
-
-Sets User's Achievement progress (percent) by ID
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`id` | *string* | - |
-`percent` | *number* | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*RPClient*](rpclient.md)\>
-
-Defined in: [src/client.ts:838](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L838)
 
 ___
 
@@ -1261,13 +1017,13 @@ Set User's Voice Settings (only one property at a time or Discord will error)
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `settings` | [*UserVoiceSettings*](../interfaces/uservoicesettings.md) | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*UserVoiceSettings*](../interfaces/uservoicesettings.md)\>
 
-Defined in: [src/client.ts:414](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L414)
+Defined in: [src/client.ts:470](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L470)
 
 ___
 
@@ -1280,13 +1036,13 @@ Set Voice Settings of Client. Only one property to update at once supported
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `settings` | [*VoiceSettings*](../interfaces/voicesettings.md) | - |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*VoiceSettings*](../interfaces/voicesettings.md)\>
 
-Defined in: [src/client.ts:533](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L533)
+Defined in: [src/client.ts:589](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L589)
 
 ___
 
@@ -1299,12 +1055,12 @@ Start capturing shortcut
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*ShortcutKeyCombo*](../interfaces/shortcutkeycombo.md)[]\>
 
-Defined in: [src/client.ts:585](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L585)
+Defined in: [src/client.ts:641](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L641)
 
 ___
 
@@ -1317,12 +1073,12 @@ Stop capturing shortcut
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `timeout` | *number* | 5000 |
 
 **Returns:** *Promise*<[*ShortcutKeyCombo*](../interfaces/shortcutkeycombo.md)[]\>
 
-Defined in: [src/client.ts:590](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L590)
+Defined in: [src/client.ts:646](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L646)
 
 ___
 
@@ -1335,13 +1091,13 @@ Subscribe for an RPC Event.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `evt` | [*RPCEvent*](../enums/rpcevent.md) |
 `args?` | *any* |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:170](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L170)
+Defined in: [src/client.ts:217](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L217)
 
 ___
 
@@ -1354,53 +1110,33 @@ Unsubscribe from an RPC Event.
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `evt` | [*RPCEvent*](../enums/rpcevent.md) |
 `args?` | *any* |
 
 **Returns:** *Promise*<[*RPClient*](rpclient.md)\>
 
-Defined in: [src/client.ts:190](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L190)
-
-___
-
-### updateLobby
-
-▸ **updateLobby**(`id`: *string*, `options`: [*LobbyOptions*](../interfaces/lobbyoptions.md), `timeout?`: *number*): *Promise*<[*RPClient*](rpclient.md)\>
-
-Update a Lobby with given options
-
-#### Parameters:
-
-Name | Type | Default value |
------- | ------ | ------ |
-`id` | *string* | - |
-`options` | [*LobbyOptions*](../interfaces/lobbyoptions.md) | - |
-`timeout` | *number* | 5000 |
-
-**Returns:** *Promise*<[*RPClient*](rpclient.md)\>
-
-Defined in: [src/client.ts:908](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L908)
+Defined in: [src/client.ts:242](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L242)
 
 ___
 
 ### waitFor
 
-▸ **waitFor**(`event`: *string*, `checkFunction?`: (...`args`: *any*[]) => *boolean*, `timeout?`: *number*): *Promise*<*any*[]\>
+▸ **waitFor**(`event`: *string*, `checkFunction?`: (...`args`: *any*[]) => *boolean*, `timeout?`: *number*): *Promise*<any[]\>
 
 Wait for an event to fire
 
 #### Parameters:
 
-Name | Type | Default value |
------- | ------ | ------ |
-`event` | *string* | - |
-`checkFunction` | (...`args`: *any*[]) => *boolean* | ... |
-`timeout?` | *number* | - |
+Name | Type |
+:------ | :------ |
+`event` | *string* |
+`checkFunction` | (...`args`: *any*[]) => *boolean* |
+`timeout?` | *number* |
 
-**Returns:** *Promise*<*any*[]\>
+**Returns:** *Promise*<any[]\>
 
-Defined in: [src/client.ts:1061](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/client.ts#L1061)
+Defined in: [src/client.ts:778](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L778)
 
 ___
 
@@ -1413,7 +1149,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *EventEmitter* |
 `event` | *string* \| *symbol* |
 
@@ -1425,16 +1161,16 @@ ___
 
 ### on
 
-▸ `Static`**on**(`emitter`: *EventEmitter*, `event`: *string*): *AsyncIterableIterator*<*any*\>
+▸ `Static`**on**(`emitter`: *EventEmitter*, `event`: *string*): *AsyncIterableIterator*<any\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *EventEmitter* |
 `event` | *string* |
 
-**Returns:** *AsyncIterableIterator*<*any*\>
+**Returns:** *AsyncIterableIterator*<any\>
 
 Defined in: node_modules/@types/node/events.d.ts:23
 
@@ -1442,28 +1178,28 @@ ___
 
 ### once
 
-▸ `Static`**once**(`emitter`: *NodeEventTarget*, `event`: *string* \| *symbol*): *Promise*<*any*[]\>
+▸ `Static`**once**(`emitter`: *NodeEventTarget*, `event`: *string* \| *symbol*): *Promise*<any[]\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *NodeEventTarget* |
 `event` | *string* \| *symbol* |
 
-**Returns:** *Promise*<*any*[]\>
+**Returns:** *Promise*<any[]\>
 
 Defined in: node_modules/@types/node/events.d.ts:21
 
-▸ `Static`**once**(`emitter`: DOMEventTarget, `event`: *string*): *Promise*<*any*[]\>
+▸ `Static`**once**(`emitter`: DOMEventTarget, `event`: *string*): *Promise*<any[]\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | DOMEventTarget |
 `event` | *string* |
 
-**Returns:** *Promise*<*any*[]\>
+**Returns:** *Promise*<any[]\>
 
 Defined in: node_modules/@types/node/events.d.ts:22

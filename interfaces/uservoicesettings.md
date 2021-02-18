@@ -2,10 +2,6 @@
 
 # Interface: UserVoiceSettings
 
-## Hierarchy
-
-* **UserVoiceSettings**
-
 ## Table of contents
 
 ### Properties
@@ -21,7 +17,7 @@
 
 • `Optional` **mute**: *undefined* \| *boolean*
 
-Defined in: [src/types.ts:154](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L154)
+Defined in: [src/types.ts:156](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L156)
 
 ___
 
@@ -29,7 +25,7 @@ ___
 
 • `Optional` **pan**: *undefined* \| [*UserVoiceSettingsPan*](uservoicesettingspan.md)
 
-Defined in: [src/types.ts:152](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L152)
+Defined in: [src/types.ts:154](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L154)
 
 ___
 
@@ -37,7 +33,7 @@ ___
 
 • **user\_id**: *string*
 
-Defined in: [src/types.ts:151](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L151)
+Defined in: [src/types.ts:153](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L153)
 
 ___
 
@@ -45,4 +41,4 @@ ___
 
 • `Optional` **volume**: *undefined* \| *number*
 
-Defined in: [src/types.ts:153](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L153)
+Defined in: [src/types.ts:155](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L155)

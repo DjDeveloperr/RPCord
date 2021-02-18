@@ -46,7 +46,9 @@
 - [NetworkingConfig](interfaces/networkingconfig.md)
 - [PartialChannel](interfaces/partialchannel.md)
 - [PartialGuild](interfaces/partialguild.md)
+- [PresencePayload](interfaces/presencepayload.md)
 - [RPClientOptions](interfaces/rpclientoptions.md)
+- [Relationship](interfaces/relationship.md)
 - [ShortcutKeyCombo](interfaces/shortcutkeycombo.md)
 - [User](interfaces/user.md)
 - [UserVoiceSettings](interfaces/uservoicesettings.md)
@@ -58,10 +60,22 @@
 - [VoiceState](interfaces/voicestate.md)
 - [VoiceStateData](interfaces/voicestatedata.md)
 
+### Variables
+
+- [IGNORED\_AUTO\_EVENTS](modules.md#ignored_auto_events)
+
 ### Functions
 
 - [findIPC](modules.md#findipc)
 - [getIPCPath](modules.md#getipcpath)
+
+## Variables
+
+### IGNORED\_AUTO\_EVENTS
+
+• `Const` **IGNORED\_AUTO\_EVENTS**: *string*[]
+
+Defined in: [src/client.ts:30](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/client.ts#L30)
 
 ## Functions
 
@@ -72,12 +86,12 @@
 #### Parameters:
 
 Name | Type | Default value |
------- | ------ | ------ |
+:------ | :------ | :------ |
 `id` | *number* | 0 |
 
 **Returns:** *Promise*<Socket\>
 
-Defined in: [src/ipc.ts:7](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/ipc.ts#L7)
+Defined in: [src/ipc.ts:7](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/ipc.ts#L7)
 
 ___
 
@@ -88,9 +102,9 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `id` | *number* |
 
 **Returns:** *string*
 
-Defined in: [src/util.ts:1](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/util.ts#L1)
+Defined in: [src/util.ts:1](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/util.ts#L1)

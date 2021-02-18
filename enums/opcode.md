@@ -20,7 +20,7 @@ Op Codes sent by IPC Messages.
 
 • **Close**: = 2
 
-Defined in: [src/types.ts:5](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L5)
+Defined in: [src/types.ts:7](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L7)
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **Frame**: = 1
 
-Defined in: [src/types.ts:4](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L4)
+Defined in: [src/types.ts:6](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L6)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **Handshake**: = 0
 
-Defined in: [src/types.ts:3](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L3)
+Defined in: [src/types.ts:5](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L5)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **Ping**: = 3
 
-Defined in: [src/types.ts:6](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L6)
+Defined in: [src/types.ts:8](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L8)
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 • **Pong**: = 4
 
-Defined in: [src/types.ts:7](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L7)
+Defined in: [src/types.ts:9](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L9)

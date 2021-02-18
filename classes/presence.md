@@ -2,10 +2,6 @@
 
 # Class: Presence
 
-## Hierarchy
-
-* **Presence**
-
 ## Implements
 
 * [*ActivityPayload*](../interfaces/activitypayload.md)
@@ -65,12 +61,12 @@
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `data?` | [*ActivityPayload*](../interfaces/activitypayload.md) |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:74](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L74)
+Defined in: [src/presence.ts:74](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L74)
 
 ## Properties
 
@@ -80,7 +76,7 @@ Defined in: [src/presence.ts:74](https://github.com/DjDeveloperr/RPCord/blob/e54
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[assets](../interfaces/activitypayload.md#assets)
 
-Defined in: [src/presence.ts:70](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L70)
+Defined in: [src/presence.ts:70](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L70)
 
 ___
 
@@ -90,7 +86,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[buttons](../interfaces/activitypayload.md#buttons)
 
-Defined in: [src/presence.ts:73](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L73)
+Defined in: [src/presence.ts:73](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L73)
 
 ___
 
@@ -100,7 +96,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[details](../interfaces/activitypayload.md#details)
 
-Defined in: [src/presence.ts:67](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L67)
+Defined in: [src/presence.ts:67](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L67)
 
 ___
 
@@ -110,7 +106,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[flags](../interfaces/activitypayload.md#flags)
 
-Defined in: [src/presence.ts:74](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L74)
+Defined in: [src/presence.ts:74](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L74)
 
 ___
 
@@ -120,7 +116,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[instance](../interfaces/activitypayload.md#instance)
 
-Defined in: [src/presence.ts:72](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L72)
+Defined in: [src/presence.ts:72](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L72)
 
 ___
 
@@ -130,7 +126,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[party](../interfaces/activitypayload.md#party)
 
-Defined in: [src/presence.ts:69](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L69)
+Defined in: [src/presence.ts:69](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L69)
 
 ___
 
@@ -140,7 +136,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[secrets](../interfaces/activitypayload.md#secrets)
 
-Defined in: [src/presence.ts:71](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L71)
+Defined in: [src/presence.ts:71](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L71)
 
 ___
 
@@ -150,7 +146,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[state](../interfaces/activitypayload.md#state)
 
-Defined in: [src/presence.ts:68](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L68)
+Defined in: [src/presence.ts:68](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L68)
 
 ___
 
@@ -160,7 +156,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[timestamps](../interfaces/activitypayload.md#timestamps)
 
-Defined in: [src/presence.ts:66](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L66)
+Defined in: [src/presence.ts:66](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L66)
 
 ___
 
@@ -170,7 +166,7 @@ ___
 
 Implementation of: [ActivityPayload](../interfaces/activitypayload.md).[type](../interfaces/activitypayload.md#type)
 
-Defined in: [src/presence.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L65)
+Defined in: [src/presence.ts:65](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L65)
 
 ## Methods
 
@@ -181,12 +177,12 @@ Defined in: [src/presence.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e54
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `button` | [*ActivityButton*](../interfaces/activitybutton.md) |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:249](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L249)
+Defined in: [src/presence.ts:249](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L249)
 
 ___
 
@@ -197,12 +193,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `assets?` | [*ActivityAssets*](../interfaces/activityassets.md) |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:160](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L160)
+Defined in: [src/presence.ts:160](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L160)
 
 ___
 
@@ -213,12 +209,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `...buttons` | [*undefined* \| [*ActivityButton*](../interfaces/activitybutton.md), *undefined* \| [*ActivityButton*](../interfaces/activitybutton.md)] |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:241](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L241)
+Defined in: [src/presence.ts:241](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L241)
 
 ___
 
@@ -229,12 +225,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `details?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:123](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L123)
+Defined in: [src/presence.ts:123](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L123)
 
 ___
 
@@ -245,12 +241,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `ts?` | *string* \| *number* \| Date |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:111](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L111)
+Defined in: [src/presence.ts:111](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L111)
 
 ___
 
@@ -261,12 +257,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `...flags` | [*ActivityFlags*](../enums/activityflags.md)[] |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:231](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L231)
+Defined in: [src/presence.ts:231](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L231)
 
 ___
 
@@ -277,12 +273,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `instance?` | *boolean* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:226](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L226)
+Defined in: [src/presence.ts:226](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L226)
 
 ___
 
@@ -293,12 +289,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `secret?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:208](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L208)
+Defined in: [src/presence.ts:208](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L208)
 
 ___
 
@@ -309,13 +305,13 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `text?` | *string* |
 `image?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:165](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L165)
+Defined in: [src/presence.ts:165](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L165)
 
 ___
 
@@ -326,12 +322,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `image?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:185](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L185)
+Defined in: [src/presence.ts:185](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L185)
 
 ___
 
@@ -342,12 +338,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `text?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:179](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L179)
+Defined in: [src/presence.ts:179](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L179)
 
 ___
 
@@ -358,12 +354,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `secret?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:220](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L220)
+Defined in: [src/presence.ts:220](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L220)
 
 ___
 
@@ -374,12 +370,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `party?` | [*ActivityParty*](../interfaces/activityparty.md) |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:133](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L133)
+Defined in: [src/presence.ts:133](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L133)
 
 ___
 
@@ -390,12 +386,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `id?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:138](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L138)
+Defined in: [src/presence.ts:138](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L138)
 
 ___
 
@@ -406,13 +402,13 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `current?` | *number* |
 `max?` | *number* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:149](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L149)
+Defined in: [src/presence.ts:149](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L149)
 
 ___
 
@@ -423,12 +419,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `secrets?` | [*ActivitySecrets*](../interfaces/activitysecrets.md) |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:203](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L203)
+Defined in: [src/presence.ts:203](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L203)
 
 ___
 
@@ -439,13 +435,13 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `text?` | *string* |
 `image?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:172](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L172)
+Defined in: [src/presence.ts:172](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L172)
 
 ___
 
@@ -456,12 +452,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `image?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:197](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L197)
+Defined in: [src/presence.ts:197](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L197)
 
 ___
 
@@ -472,12 +468,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `text?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:191](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L191)
+Defined in: [src/presence.ts:191](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L191)
 
 ___
 
@@ -488,12 +484,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `secret?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:214](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L214)
+Defined in: [src/presence.ts:214](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L214)
 
 ___
 
@@ -504,12 +500,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `ts?` | *string* \| *number* \| Date |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:99](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L99)
+Defined in: [src/presence.ts:99](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L99)
 
 ___
 
@@ -520,12 +516,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `state?` | *string* |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:128](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L128)
+Defined in: [src/presence.ts:128](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L128)
 
 ___
 
@@ -536,12 +532,14 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
-`ts?` | { `end?`: *undefined* \| *string* \| *number* \| Date ; `start?`: *undefined* \| *string* \| *number* \| Date  } |
+:------ | :------ |
+`ts?` | *object* |
+`ts.end?` | *undefined* \| *string* \| *number* \| Date |
+`ts.start?` | *undefined* \| *string* \| *number* \| Date |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:85](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L85)
+Defined in: [src/presence.ts:85](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L85)
 
 ___
 
@@ -552,9 +550,9 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `type` | *undefined* \| [*Game*](../enums/activitytype.md#game) \| [*Streaming*](../enums/activitytype.md#streaming) \| [*Listening*](../enums/activitytype.md#listening) \| [*Custom*](../enums/activitytype.md#custom) \| [*Competing*](../enums/activitytype.md#competing) |
 
 **Returns:** [*Presence*](presence.md)
 
-Defined in: [src/presence.ts:80](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L80)
+Defined in: [src/presence.ts:80](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L80)

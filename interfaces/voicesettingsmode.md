@@ -2,10 +2,6 @@
 
 # Interface: VoiceSettingsMode
 
-## Hierarchy
-
-* **VoiceSettingsMode**
-
 ## Table of contents
 
 ### Properties
@@ -22,7 +18,7 @@
 
 • **auto\_threshold**: *boolean*
 
-Defined in: [src/types.ts:181](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L181)
+Defined in: [src/types.ts:183](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L183)
 
 ___
 
@@ -30,7 +26,7 @@ ___
 
 • **delay**: *number*
 
-Defined in: [src/types.ts:184](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L184)
+Defined in: [src/types.ts:186](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L186)
 
 ___
 
@@ -38,7 +34,7 @@ ___
 
 • **shortcut**: [*ShortcutKeyCombo*](shortcutkeycombo.md)
 
-Defined in: [src/types.ts:183](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L183)
+Defined in: [src/types.ts:185](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L185)
 
 ___
 
@@ -46,7 +42,7 @@ ___
 
 • **threshold**: *number*
 
-Defined in: [src/types.ts:182](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L182)
+Defined in: [src/types.ts:184](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L184)
 
 ___
 
@@ -54,4 +50,4 @@ ___
 
 • **type**: *string*
 
-Defined in: [src/types.ts:180](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L180)
+Defined in: [src/types.ts:182](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L182)

@@ -2,10 +2,6 @@
 
 # Interface: ActivityParty
 
-## Hierarchy
-
-* **ActivityParty**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • `Optional` **id**: *undefined* \| *string*
 
-Defined in: [src/presence.ts:15](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L15)
+Defined in: [src/presence.ts:15](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L15)
 
 ___
 
@@ -27,4 +23,4 @@ ___
 
 • `Optional` **size**: *undefined* \| [*number*, *number*]
 
-Defined in: [src/presence.ts:16](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/presence.ts#L16)
+Defined in: [src/presence.ts:16](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/presence.ts#L16)

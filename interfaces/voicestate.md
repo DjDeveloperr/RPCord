@@ -2,10 +2,6 @@
 
 # Interface: VoiceState
 
-## Hierarchy
-
-* **VoiceState**
-
 ## Table of contents
 
 ### Properties
@@ -23,7 +19,7 @@
 
 • **mute**: *boolean*
 
-Defined in: [src/types.ts:247](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L247)
+Defined in: [src/types.ts:249](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L249)
 
 ___
 
@@ -31,7 +27,7 @@ ___
 
 • `Optional` **nick**: *undefined* \| *null* \| *string*
 
-Defined in: [src/types.ts:246](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L246)
+Defined in: [src/types.ts:248](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L248)
 
 ___
 
@@ -39,7 +35,7 @@ ___
 
 • **pan**: [*UserVoiceSettingsPan*](uservoicesettingspan.md)
 
-Defined in: [src/types.ts:249](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L249)
+Defined in: [src/types.ts:251](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L251)
 
 ___
 
@@ -47,7 +43,7 @@ ___
 
 • **user**: [*User*](user.md)
 
-Defined in: [src/types.ts:245](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L245)
+Defined in: [src/types.ts:247](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L247)
 
 ___
 
@@ -55,7 +51,7 @@ ___
 
 • **voice\_state**: [*VoiceStateData*](voicestatedata.md)
 
-Defined in: [src/types.ts:244](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L244)
+Defined in: [src/types.ts:246](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L246)
 
 ___
 
@@ -63,4 +59,4 @@ ___
 
 • **volume**: *number*
 
-Defined in: [src/types.ts:248](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L248)
+Defined in: [src/types.ts:250](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L250)

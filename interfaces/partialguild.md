@@ -2,10 +2,6 @@
 
 # Interface: PartialGuild
 
-## Hierarchy
-
-* **PartialGuild**
-
 ## Table of contents
 
 ### Properties
@@ -19,7 +15,7 @@
 
 • **id**: *string*
 
-Defined in: [src/types.ts:283](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L283)
+Defined in: [src/types.ts:285](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L285)
 
 ___
 
@@ -27,4 +23,4 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:284](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L284)
+Defined in: [src/types.ts:286](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L286)

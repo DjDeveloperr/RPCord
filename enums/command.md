@@ -80,7 +80,7 @@ Commands used to communicate with IPC.
 
 • **AcceptActivityInvite**: = "ACCEPT\_ACTIVITY\_INVITE"
 
-Defined in: [src/types.ts:70](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L70)
+Defined in: [src/types.ts:72](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L72)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 • **ActivityInviteUser**: = "ACTIVITY\_INVITE\_USER"
 
-Defined in: [src/types.ts:71](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L71)
+Defined in: [src/types.ts:73](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L73)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 • **Authenticate**: = "AUTHENTICATE"
 
-Defined in: [src/types.ts:14](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L14)
+Defined in: [src/types.ts:16](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L16)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 • **Authorize**: = "AUTHORIZE"
 
-Defined in: [src/types.ts:13](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L13)
+Defined in: [src/types.ts:15](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L15)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **BraintreePopupBridgeCallback**: = "BRAINTREE\_POPUP\_BRIDGE\_CALLBACK"
 
-Defined in: [src/types.ts:65](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L65)
+Defined in: [src/types.ts:67](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L67)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 • **BrowserHandoff**: = "BROWSER\_HANDOFF"
 
-Defined in: [src/types.ts:61](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L61)
+Defined in: [src/types.ts:63](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L63)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 • **CaptureShortcut**: = "CAPTURE\_SHORTCUT"
 
-Defined in: [src/types.ts:27](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L27)
+Defined in: [src/types.ts:29](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L29)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 • **CloseActivityJoinRequest**: = "CLOSE\_ACTIVITY\_JOIN\_REQUEST"
 
-Defined in: [src/types.ts:72](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L72)
+Defined in: [src/types.ts:74](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L74)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 • **CloseActivityRequest**: = "CLOSE\_ACTIVITY\_REQUEST"
 
-Defined in: [src/types.ts:31](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L31)
+Defined in: [src/types.ts:33](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L33)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 • **ConnectToLobby**: = "CONNECT\_TO\_LOBBY"
 
-Defined in: [src/types.ts:55](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L55)
+Defined in: [src/types.ts:57](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L57)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 • **ConnectToLobbyVoice**: = "CONNECT\_TO\_LOBBY\_VOICE"
 
-Defined in: [src/types.ts:51](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L51)
+Defined in: [src/types.ts:53](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L53)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 • **ConnectionsCallback**: = "CONNECTIONS\_CALLBACK"
 
-Defined in: [src/types.ts:66](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L66)
+Defined in: [src/types.ts:68](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L68)
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 • **CreateChannelInvite**: = "CREATE\_CHANNEL\_INVITE"
 
-Defined in: [src/types.ts:75](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L75)
+Defined in: [src/types.ts:77](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L77)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 • **CreateLobby**: = "CREATE\_LOBBY"
 
-Defined in: [src/types.ts:59](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L59)
+Defined in: [src/types.ts:61](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L61)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 • **DeepLink**: = "DEEP\_LINK"
 
-Defined in: [src/types.ts:67](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L67)
+Defined in: [src/types.ts:69](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L69)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 • **DeleteLobby**: = "DELETE\_LOBBY"
 
-Defined in: [src/types.ts:57](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L57)
+Defined in: [src/types.ts:59](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L59)
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 • **DisconnectFromLobby**: = "DISCONNECT\_FROM\_LOBBY"
 
-Defined in: [src/types.ts:54](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L54)
+Defined in: [src/types.ts:56](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L56)
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 • **DisconnectFromLobbyVoice**: = "DISCONNECT\_FROM\_LOBBY\_VOICE"
 
-Defined in: [src/types.ts:50](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L50)
+Defined in: [src/types.ts:52](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L52)
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 • **Dispatch**: = "DISPATCH"
 
-Defined in: [src/types.ts:12](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L12)
+Defined in: [src/types.ts:14](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L14)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 • **GetActivityJoinTicket**: = "GET\_ACTIVITY\_JOIN\_TICKET"
 
-Defined in: [src/types.ts:34](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L34)
+Defined in: [src/types.ts:36](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L36)
 
 ___
 
@@ -240,7 +240,7 @@ ___
 
 • **GetApplicationTicket**: = "GET\_APPLICATION\_TICKET"
 
-Defined in: [src/types.ts:44](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L44)
+Defined in: [src/types.ts:46](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L46)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 • **GetChannel**: = "GET\_CHANNEL"
 
-Defined in: [src/types.ts:17](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L17)
+Defined in: [src/types.ts:19](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L19)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 • **GetChannels**: = "GET\_CHANNELS"
 
-Defined in: [src/types.ts:18](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L18)
+Defined in: [src/types.ts:20](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L20)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 • **GetEntitlementTicket**: = "GET\_ENTITLEMENT\_TICKET"
 
-Defined in: [src/types.ts:43](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L43)
+Defined in: [src/types.ts:45](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L45)
 
 ___
 
@@ -272,7 +272,7 @@ ___
 
 • **GetEntitlements**: = "GET\_ENTITLEMENTS"
 
-Defined in: [src/types.ts:40](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L40)
+Defined in: [src/types.ts:42](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L42)
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 • **GetGuild**: = "GET\_GUILD"
 
-Defined in: [src/types.ts:15](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L15)
+Defined in: [src/types.ts:17](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L17)
 
 ___
 
@@ -288,7 +288,7 @@ ___
 
 • **GetGuilds**: = "GET\_GUILDS"
 
-Defined in: [src/types.ts:16](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L16)
+Defined in: [src/types.ts:18](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L18)
 
 ___
 
@@ -296,7 +296,7 @@ ___
 
 • **GetImage**: = "GET\_IMAGE"
 
-Defined in: [src/types.ts:60](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L60)
+Defined in: [src/types.ts:62](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L62)
 
 ___
 
@@ -304,7 +304,7 @@ ___
 
 • **GetNetworkingConfig**: = "GET\_NETWORKING\_CONFIG"
 
-Defined in: [src/types.ts:41](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L41)
+Defined in: [src/types.ts:43](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L43)
 
 ___
 
@@ -312,7 +312,7 @@ ___
 
 • **GetRelationships**: = "GET\_RELATIONSHIPS"
 
-Defined in: [src/types.ts:76](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L76)
+Defined in: [src/types.ts:78](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L78)
 
 ___
 
@@ -320,7 +320,7 @@ ___
 
 • **GetSelectedVoiceChannel**: = "GET\_SELECTED\_VOICE\_CHANNEL"
 
-Defined in: [src/types.ts:23](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L23)
+Defined in: [src/types.ts:25](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L25)
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 • **GetSkus**: = "GET\_SKUS"
 
-Defined in: [src/types.ts:39](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L39)
+Defined in: [src/types.ts:41](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L41)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 • **GetUserAchievements**: = "GET\_USER\_ACHIEVEMENTS"
 
-Defined in: [src/types.ts:33](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L33)
+Defined in: [src/types.ts:35](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L35)
 
 ___
 
@@ -344,7 +344,7 @@ ___
 
 • **GetVoiceSettings**: = "GET\_VOICE\_SETTINGS"
 
-Defined in: [src/types.ts:25](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L25)
+Defined in: [src/types.ts:27](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L27)
 
 ___
 
@@ -352,7 +352,7 @@ ___
 
 • **GiftCodeBrowser**: = "GIFT\_CODE\_BROWSER"
 
-Defined in: [src/types.ts:64](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L64)
+Defined in: [src/types.ts:66](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L66)
 
 ___
 
@@ -360,7 +360,7 @@ ___
 
 • **GuildTemplateBrowser**: = "GUILD\_TEMPLATE\_BROWSER"
 
-Defined in: [src/types.ts:63](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L63)
+Defined in: [src/types.ts:65](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L65)
 
 ___
 
@@ -368,7 +368,7 @@ ___
 
 • **InviteBrowser**: = "INVITE\_BROWSER"
 
-Defined in: [src/types.ts:68](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L68)
+Defined in: [src/types.ts:70](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L70)
 
 ___
 
@@ -376,7 +376,7 @@ ___
 
 • **NetworkingCreateToken**: = "NETWORKING\_CREATE\_TOKEN"
 
-Defined in: [src/types.ts:38](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L38)
+Defined in: [src/types.ts:40](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L40)
 
 ___
 
@@ -384,7 +384,7 @@ ___
 
 • **NetworkingPeerMetrics**: = "NETWORKING\_PEER\_METRICS"
 
-Defined in: [src/types.ts:37](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L37)
+Defined in: [src/types.ts:39](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L39)
 
 ___
 
@@ -392,7 +392,7 @@ ___
 
 • **NetworkingSystemMetrics**: = "NETWORKING\_SYSTEM\_METRICS"
 
-Defined in: [src/types.ts:36](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L36)
+Defined in: [src/types.ts:38](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L38)
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 • **OpenInviteDialog**: = "OPEN\_INVITE\_DIALOG"
 
-Defined in: [src/types.ts:69](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L69)
+Defined in: [src/types.ts:71](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L71)
 
 ___
 
@@ -408,7 +408,7 @@ ___
 
 • **OpenOverlayActivityInvite**: = "OVEN\_OVERLAY\_ACTIVITY\_INVITE"
 
-Defined in: [src/types.ts:48](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L48)
+Defined in: [src/types.ts:50](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L50)
 
 ___
 
@@ -416,7 +416,7 @@ ___
 
 • **OpenOverlayGuildInvite**: = "OPEN\_OVERLAY\_GUILD\_INVITE"
 
-Defined in: [src/types.ts:47](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L47)
+Defined in: [src/types.ts:49](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L49)
 
 ___
 
@@ -424,7 +424,7 @@ ___
 
 • **OpenOverlayVoiceSettings**: = "OPEN\_OVERLAY\_VOICE\_SETTINGS"
 
-Defined in: [src/types.ts:46](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L46)
+Defined in: [src/types.ts:48](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L48)
 
 ___
 
@@ -432,7 +432,7 @@ ___
 
 • **Overlay**: = "OVERLAY"
 
-Defined in: [src/types.ts:62](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L62)
+Defined in: [src/types.ts:64](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L64)
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 • **SearchLobbies**: = "SEARCH\_LOBBIES"
 
-Defined in: [src/types.ts:52](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L52)
+Defined in: [src/types.ts:54](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L54)
 
 ___
 
@@ -448,7 +448,7 @@ ___
 
 • **SelectTextChannel**: = "SELECT\_TEXT\_CHANNEL"
 
-Defined in: [src/types.ts:24](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L24)
+Defined in: [src/types.ts:26](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L26)
 
 ___
 
@@ -456,7 +456,7 @@ ___
 
 • **SelectVoiceChannel**: = "SELECT\_VOICE\_CHANNEL"
 
-Defined in: [src/types.ts:22](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L22)
+Defined in: [src/types.ts:24](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L24)
 
 ___
 
@@ -464,7 +464,7 @@ ___
 
 • **SendActivityJoinInvite**: = "SEND\_ACTIVITY\_JOIN\_INVITE"
 
-Defined in: [src/types.ts:30](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L30)
+Defined in: [src/types.ts:32](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L32)
 
 ___
 
@@ -472,7 +472,7 @@ ___
 
 • **SendGenericEvent**: = "SEND\_GENERIC\_EVENT"
 
-Defined in: [src/types.ts:35](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L35)
+Defined in: [src/types.ts:37](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L37)
 
 ___
 
@@ -480,7 +480,7 @@ ___
 
 • **SendToLobby**: = "SEND\_TO\_LOBBY"
 
-Defined in: [src/types.ts:53](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L53)
+Defined in: [src/types.ts:55](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L55)
 
 ___
 
@@ -488,7 +488,7 @@ ___
 
 • **SetActivity**: = "SET\_ACTIVITY"
 
-Defined in: [src/types.ts:29](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L29)
+Defined in: [src/types.ts:31](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L31)
 
 ___
 
@@ -496,7 +496,7 @@ ___
 
 • **SetCertifiedDevices**: = "SET\_CERTIFIED\_DEVICES"
 
-Defined in: [src/types.ts:28](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L28)
+Defined in: [src/types.ts:30](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L30)
 
 ___
 
@@ -504,7 +504,7 @@ ___
 
 • **SetOverlayLocked**: = "SET\_OVERLAY\_LOCKED"
 
-Defined in: [src/types.ts:49](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L49)
+Defined in: [src/types.ts:51](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L51)
 
 ___
 
@@ -512,7 +512,7 @@ ___
 
 • **SetUserAchievement**: = "SET\_USER\_ACHIEVEMENT"
 
-Defined in: [src/types.ts:32](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L32)
+Defined in: [src/types.ts:34](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L34)
 
 ___
 
@@ -520,7 +520,7 @@ ___
 
 • **SetUserVoiceSettings**: = "SET\_USER\_VOICE\_SETTINGS"
 
-Defined in: [src/types.ts:21](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L21)
+Defined in: [src/types.ts:23](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L23)
 
 ___
 
@@ -528,7 +528,7 @@ ___
 
 • **SetUserVoiceSettings2**: = "SET\_USER\_VOICE\_SETTINGS\_2"
 
-Defined in: [src/types.ts:74](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L74)
+Defined in: [src/types.ts:76](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L76)
 
 ___
 
@@ -536,7 +536,7 @@ ___
 
 • **SetVoiceSettings**: = "SET\_VOICE\_SETTINGS"
 
-Defined in: [src/types.ts:26](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L26)
+Defined in: [src/types.ts:28](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L28)
 
 ___
 
@@ -544,7 +544,7 @@ ___
 
 • **SetVoiceSettings2**: = "SET\_VOICE\_SETTINGS\_2"
 
-Defined in: [src/types.ts:73](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L73)
+Defined in: [src/types.ts:75](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L75)
 
 ___
 
@@ -552,7 +552,7 @@ ___
 
 • **StartPurchase**: = "START\_PURCHASE"
 
-Defined in: [src/types.ts:42](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L42)
+Defined in: [src/types.ts:44](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L44)
 
 ___
 
@@ -560,7 +560,7 @@ ___
 
 • **Subscribe**: = "SUBSCRIBE"
 
-Defined in: [src/types.ts:19](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L19)
+Defined in: [src/types.ts:21](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L21)
 
 ___
 
@@ -568,7 +568,7 @@ ___
 
 • **Unsubscribe**: = "UNSUBSCRIBE"
 
-Defined in: [src/types.ts:20](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L20)
+Defined in: [src/types.ts:22](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L22)
 
 ___
 
@@ -576,7 +576,7 @@ ___
 
 • **UpdateLobby**: = "UPDATE\_LOBBY"
 
-Defined in: [src/types.ts:58](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L58)
+Defined in: [src/types.ts:60](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L60)
 
 ___
 
@@ -584,7 +584,7 @@ ___
 
 • **UpdateLobbyMember**: = "UPDATE\_LOBBY\_MEMBER"
 
-Defined in: [src/types.ts:56](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L56)
+Defined in: [src/types.ts:58](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L58)
 
 ___
 
@@ -592,4 +592,4 @@ ___
 
 • **ValidateApplication**: = "VALIDATE\_APPLICATION"
 
-Defined in: [src/types.ts:45](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L45)
+Defined in: [src/types.ts:47](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L47)

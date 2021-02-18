@@ -2,10 +2,6 @@
 
 # Interface: Guild
 
-## Hierarchy
-
-* **Guild**
-
 ## Table of contents
 
 ### Properties
@@ -20,7 +16,7 @@
 
 • **icon\_url**: *null* \| *string*
 
-Defined in: [src/types.ts:279](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L279)
+Defined in: [src/types.ts:281](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L281)
 
 ___
 
@@ -28,7 +24,7 @@ ___
 
 • **id**: *string*
 
-Defined in: [src/types.ts:277](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L277)
+Defined in: [src/types.ts:279](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L279)
 
 ___
 
@@ -36,4 +32,4 @@ ___
 
 • **name**: *string*
 
-Defined in: [src/types.ts:278](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/types.ts#L278)
+Defined in: [src/types.ts:280](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/types.ts#L280)

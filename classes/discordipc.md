@@ -55,7 +55,7 @@
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `options?` | EventEmitterOptions |
 
 **Returns:** [*DiscordIPC*](discordipc.md)
@@ -68,7 +68,7 @@ Defined in: node_modules/@types/node/events.d.ts:18
 
 • `Optional` **socket**: *undefined* \| *Socket*
 
-Defined in: [src/ipc.ts:26](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/ipc.ts#L26)
+Defined in: [src/ipc.ts:26](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/ipc.ts#L26)
 
 ___
 
@@ -121,7 +121,7 @@ Defined in: node_modules/@types/node/events.d.ts:37
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -137,17 +137,17 @@ ___
 
 **Returns:** *void*
 
-Defined in: [src/ipc.ts:48](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/ipc.ts#L48)
+Defined in: [src/ipc.ts:48](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/ipc.ts#L48)
 
 ___
 
 ### connect
 
-▸ **connect**(): *Promise*<*void*\>
+▸ **connect**(): *Promise*<void\>
 
-**Returns:** *Promise*<*void*\>
+**Returns:** *Promise*<void\>
 
-Defined in: [src/ipc.ts:28](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/ipc.ts#L28)
+Defined in: [src/ipc.ts:28](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/ipc.ts#L28)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `...args` | *any*[] |
 
@@ -195,7 +195,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** *number*
@@ -211,7 +211,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -227,7 +227,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -244,7 +244,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -261,7 +261,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -278,7 +278,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -295,7 +295,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -312,7 +312,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 
 **Returns:** Function[]
@@ -328,7 +328,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event?` | *string* \| *symbol* |
 
 **Returns:** [*DiscordIPC*](discordipc.md)
@@ -344,7 +344,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `event` | *string* \| *symbol* |
 `listener` | (...`args`: *any*[]) => *void* |
 
@@ -361,12 +361,12 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `packet` | [*Packet*](packet.md) |
 
 **Returns:** *string*
 
-Defined in: [src/ipc.ts:42](https://github.com/DjDeveloperr/RPCord/blob/e541738/src/ipc.ts#L42)
+Defined in: [src/ipc.ts:42](https://github.com/DjDeveloperr/RPCord/blob/43e46ce/src/ipc.ts#L42)
 
 ___
 
@@ -377,7 +377,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `n` | *number* |
 
 **Returns:** [*DiscordIPC*](discordipc.md)
@@ -395,7 +395,7 @@ ___
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *EventEmitter* |
 `event` | *string* \| *symbol* |
 
@@ -407,16 +407,16 @@ ___
 
 ### on
 
-▸ `Static`**on**(`emitter`: *EventEmitter*, `event`: *string*): *AsyncIterableIterator*<*any*\>
+▸ `Static`**on**(`emitter`: *EventEmitter*, `event`: *string*): *AsyncIterableIterator*<any\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *EventEmitter* |
 `event` | *string* |
 
-**Returns:** *AsyncIterableIterator*<*any*\>
+**Returns:** *AsyncIterableIterator*<any\>
 
 Defined in: node_modules/@types/node/events.d.ts:23
 
@@ -424,28 +424,28 @@ ___
 
 ### once
 
-▸ `Static`**once**(`emitter`: *NodeEventTarget*, `event`: *string* \| *symbol*): *Promise*<*any*[]\>
+▸ `Static`**once**(`emitter`: *NodeEventTarget*, `event`: *string* \| *symbol*): *Promise*<any[]\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | *NodeEventTarget* |
 `event` | *string* \| *symbol* |
 
-**Returns:** *Promise*<*any*[]\>
+**Returns:** *Promise*<any[]\>
 
 Defined in: node_modules/@types/node/events.d.ts:21
 
-▸ `Static`**once**(`emitter`: DOMEventTarget, `event`: *string*): *Promise*<*any*[]\>
+▸ `Static`**once**(`emitter`: DOMEventTarget, `event`: *string*): *Promise*<any[]\>
 
 #### Parameters:
 
 Name | Type |
------- | ------ |
+:------ | :------ |
 `emitter` | DOMEventTarget |
 `event` | *string* |
 
-**Returns:** *Promise*<*any*[]\>
+**Returns:** *Promise*<any[]\>
 
 Defined in: node_modules/@types/node/events.d.ts:22
